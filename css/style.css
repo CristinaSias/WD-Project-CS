@@ -1,0 +1,413 @@
+:root {
+  --white: #ffffff;
+  --dark-grey: #222529;
+  --beige: #ece6c2;
+  --red: #d64f49;
+  --dark-green: #1d332c;
+  --yellow: #d2a24c;
+}
+body {
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: var(--dark-grey);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 89, 76, 1) 19%,
+    rgba(188, 193, 122, 1) 100%
+  );
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+h1 {
+  font-family: 'Bebas neue';
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+p {
+  font-family: 'bebas neue';
+  font-size: 18px;
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+/* Agegate page
+ */
+.logo-round {
+  width: 150px;
+}
+.door-top {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: var(--dark-grey);
+}
+
+.background-dark {
+  width: 100%;
+  height: 100px;
+  background: var(--dark-grey);
+}
+
+/* Header start */
+nav {
+  background-color: var(--dark-grey);
+  max-height: 70px !important;
+  font-family: mountain-date;
+  text-transform: uppercase;
+}
+.btn-main {
+  background-color: var(--beige);
+  width: 110px;
+  border: 2px solid var(--dark-grey) !important;
+  color: var(--dark-grey);
+  font-family: 'bebas neue';
+  letter-spacing: 0.1em;
+}
+
+.btn-ticket {
+  background-color: var(--red) !important;
+}
+
+.btn-main:hover,
+.btn-ticket:hover {
+  color: var(--yellow);
+  background: black !important;
+}
+.dropdown-menu {
+  background-color: var(--beige);
+  font-family: 'bebas neue';
+  letter-spacing: 0.1em;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--yellow);
+}
+/* Header end */
+
+main {
+  max-width: 100%;
+  min-height: 83vh;
+}
+
+/* 
+  HOME PAGE START
+*/
+
+/* Home page hero start */
+#home-page-hero {
+  background-image: url('../img/mountain-01.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+}
+#top-hero {
+  height: 79vh;
+}
+.moon-wrapper p {
+  font-family: plaster;
+  font-size: 54px !important;
+  line-height: 30px;
+}
+.moon-wrapper .festival {
+  font-size: 40px;
+}
+.mountain-message {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 63%;
+  margin: auto;
+  width: 25em;
+  text-align: center;
+}
+
+.mountain-title {
+  font-family: plaster;
+  font-size: 40px;
+  text-align: center;
+  line-height: 28px;
+}
+.mountain-date {
+  font-family: 'bebas neue';
+  font-size: 28px;
+  color: var(--beige);
+}
+
+.lineup {
+  font-family: plaster;
+  color: var(--beige);
+}
+.lineup-p p {
+  font-family: 'bebas neue' !important;
+}
+#bottom-hero {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    180deg,
+    rgba(46, 89, 76, 0.3) 19%,
+    rgba(29, 51, 44, 1) 100%
+  );
+}
+
+.day-1,
+.day-2 {
+  color: var(--beige);
+  font-family: 'bebas neue';
+  font-size: 18px;
+}
+
+/* Hero end */
+
+/* gallery section starts*/
+
+#carousel-section-wrapper {
+  background-color: var(--dark-green);
+  height: 600px;
+}
+#carousel {
+  padding: 40px;
+  background-color: var(--beige);
+  border: 3px solid black;
+}
+.courousel-header {
+  background-color: var(--beige);
+  border-bottom: none;
+  border-top: 3px solid black !important;
+  border-left: 3px solid black !important;
+  border-right: 3px solid black !important;
+}
+.frame-title {
+  border-right: 3px solid black !important;
+}
+
+/* galery ends */
+
+/*
+  HOME PAGE END
+*/
+
+/*
+TICKETS PAGE STARTS
+ */
+#tickets-section {
+  min-height: 60vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-frame {
+  width: 70%;
+  margin: auto;
+}
+
+.ticket-title {
+  border: 3px solid black !important;
+  background: var(--beige);
+  border-bottom: none !important;
+  border-right: none !important;
+}
+.ticket-subtitle {
+  border: 3px solid black !important;
+  background: var(--beige);
+  border-bottom: none !important;
+}
+
+.tickets-price-wrapper {
+  background-color: var(--beige);
+  border: 3px solid black !important;
+  height: 600px;
+}
+.left-column-wrapper {
+  border: 3px solid black !important;
+  border-right: none !important;
+  height: 600px;
+  background-color: var(--yellow);
+}
+
+.text-description {
+  padding: 35px;
+  height: 100%;
+}
+#saturday,
+#sunday,
+#weekend,
+#weekend-vip,
+#order-summary {
+  width: 70%;
+  margin: auto;
+}
+.day-title h5 {
+  background: var(--yellow);
+  font-size: 18px;
+  border-bottom: #222529 solid;
+}
+
+#order-summary a {
+  background: var(--yellow);
+}
+.counter {
+  min-width: 30px !important;
+}
+
+/*
+ABOUT PAGE STARTS
+ */
+#about-section {
+  min-height: 60vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-title {
+  width: 100%;
+  margin: auto;
+  background-color: var(--beige);
+  border: black 3px solid;
+}
+.about-content {
+  width: 100%;
+  margin: auto;
+  background-color: var(--beige);
+  border: black 3px solid;
+  border-top: none;
+}
+.text-wrapper {
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+}
+.text-wrapper p {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* 
+ABOUT PAGE ENDS
+ */
+
+/*  
+ARTIST PAGE STARTS
+ */
+#artist-section {
+  min-height: 60vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.artist-col-left {
+  background-color: var(--yellow);
+}
+.icon-profile {
+  color: var(--dark-grey);
+  font-size: 20px;
+  text-align: center;
+}
+.left-column-wrapper-yellow {
+  border: 3px solid black !important;
+  border-right: none !important;
+  height: 730px;
+  background: var(--yellow);
+}
+.artist-country h5 {
+  color: var(--yellow);
+  font-family: 'bebas neue';
+  letter-spacing: 0.2em;
+}
+.bio {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.icon-profile:hover {
+  color: var(--beige);
+}
+
+.video-wrapper {
+  background-color: #222529;
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+
+/*  
+ARTIST PAGE ENDS
+ */
+/* MUSICIAN
+ PAGE STARTS */
+
+#artist-section {
+  min-height: 60vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.text-description {
+  padding: 35px;
+  height: 100%;
+}
+.icon-profile {
+  color: var(--dark-grey);
+  font-size: 20px;
+  text-align: center;
+}
+.left-column-wrapper-red {
+  border: 3px solid black !important;
+  border-right: none !important;
+  height: 730px;
+  background: var(--red);
+}
+.musician-country h5 {
+  color: #d64f49;
+  font-family: 'bebas neue';
+  letter-spacing: 0.2em;
+}
+.bio {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.icon-profile:hover {
+  color: var(--beige);
+}
+
+.video-wrapper {
+  background-color: #222529;
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+
+/*  
+MUSICIAN PAGE ENDS
+ */
+
+/* footer */
+#footer {
+  margin: 0 auto;
+  text-align: center;
+}
+#footer a {
+  color: var(--beige);
+  font-size: 30px;
+  padding: 20px;
+}
+#footer a:hover {
+  color: var(--yellow);
+  font-size: 30px;
+  padding: 20px;
+}
+#footnote {
+  padding-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
