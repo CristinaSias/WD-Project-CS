@@ -312,7 +312,7 @@ ARTIST PAGE STARTS
   border: 3px solid black !important;
   border-right: none !important;
   height: 730px;
-  background: var(--red);
+  background: var(--yellow);
 }
 .artist-country h5 {
   color: var(--yellow);
