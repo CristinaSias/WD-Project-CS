@@ -7,7 +7,7 @@
   --yellow: #d2a24c;
 }
 body {
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background: var(--dark-grey);
   background: linear-gradient(
@@ -214,7 +214,6 @@ TICKETS PAGE STARTS
   border: 3px solid black !important;
   background: var(--beige);
   border-bottom: none !important;
-  border-right: none !important;
 }
 .ticket-subtitle {
   border: 3px solid black !important;
@@ -300,13 +299,10 @@ ABOUT PAGE ENDS
 ARTIST PAGE STARTS
  */
 #artist-section {
-  min-height: 60vh;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.artist-col-left {
-  background-color: var(--yellow);
-}
+
 .icon-profile {
   color: var(--dark-grey);
   font-size: 20px;
@@ -314,7 +310,6 @@ ARTIST PAGE STARTS
 }
 .left-column-wrapper-yellow {
   border: 3px solid black !important;
-  border-right: none !important;
   height: 730px;
   background: var(--yellow);
 }
@@ -339,6 +334,10 @@ ARTIST PAGE STARTS
   height: 300px;
   margin: auto;
 }
+.artist-content-wrapper {
+  background-color: var(--beige);
+  border: black 3px solid;
+}
 
 /*  
 ARTIST PAGE ENDS
@@ -362,9 +361,8 @@ ARTIST PAGE ENDS
 }
 .left-column-wrapper-red {
   border: 3px solid black !important;
-  border-right: none !important;
-  height: 730px;
   background: var(--red);
+  height: 730px;
 }
 .musician-country h5 {
   color: #d64f49;
@@ -382,7 +380,6 @@ ARTIST PAGE ENDS
 }
 
 .video-wrapper {
-  background-color: #222529;
   width: 100%;
   height: 300px;
   margin: auto;
