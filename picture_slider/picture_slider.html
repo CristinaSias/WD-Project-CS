@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <Title>Image Gallery</Title>
+
+    <link rel="stylesheet" href="../css/style2.css">
+
+    <script src="../js/picture_slider_script.js"> </script>
+</head>
+
+<body>
+
+
+    <div class="numbering_display"></div>
+
+    <!-- Images used to open the lightbox -->
+    <div class="picture_slider_row, picture_slider_cc">
+        <div class="picture_slider_column">
+            <img src="../images/painting_1.jpeg" onclick="openModal();currentSlide(1)" class="picture_slider_hover-shadow, picture_slider_img">
+
+        </div>
+        <div class="picture_slider_column">
+            <img src="../images/painting_2.jpeg" onclick="openModal();currentSlide(2)" class="picture_slider_hover-shadow, picture_slider_img">
+        </div>
+        <div class="picture_slider_column">
+            <img src="../images/painting_3.jpeg" onclick="openModal();currentSlide(3)" class="picture_slider_hover-shadow, picture_slider_img">
+        </div>
+        <div class="picture_slider_column">
+            <img src="../images/painting_4.jpeg" onclick="openModal();currentSlide(4)" class="picture_slider_hover-shadow, picture_slider_img">
+        </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="picture_slider_modal">
+        <span class="picture_slider_close cursor" onclick="closeModal()">&times;</span>
+        <div class="picture_slider_modal-content">
+
+            <div class="picture_slider_mySlides">
+                <div class="picture_slider_numbertext"></div>
+
+                <div class="picture_slider_dotContainer">
+
+                    <div class="picture_slider_currentPainting"></div>
+                    <div class="picture_slider_dot2"></div>
+                    <div class="picture_slider_dot3"></div>
+                    <div class="picture_slider_dot4"></div>
+
+
+                </div>
+
+                <img src="../images/painting_1.jpeg" style="width:100%" alt="Painting 1">
+                <!-- This width controls the width of the image in the main viewer-->
+
+
+            </div>
+
+            <div class="picture_slider_mySlides">
+                <div class="picture_slider_numbertext"></div>
+
+                <div class="picture_slider_dotContainer">
+
+                    <div class="picture_slider_dot1"></div>
+                    <div class="picture_slider_currentPainting"></div>
+                    <div class="picture_slider_dot3"></div>
+                    <div class="picture_slider_dot4"></div>
+
+
+                </div>
+
+
+
+                <img src="../images/painting_2.jpeg" style="width:100%" alt="Painting 2">
+
+            </div>
+
+            <div class="picture_slider_mySlides">
+                <div class="picture_slider_numbertext"></div>
+
+                <div class="picture_slider_dotContainer">
+
+                    <div class="picture_slider_dot1"></div>
+                    <div class="picture_slider_dot2"></div>
+                    <div class="picture_slider_currentPainting"></div>
+                    <div class="picture_slider_dot4"></div>
+
+
+                </div>
+                <img src="../images/painting_3.jpeg" width="100%" height="100%" alt="Painting 3">
+            </div>
+
+            <div class="picture_slider_mySlides">
+                <div class="picture_slider_numbertext"></div>
+                <div class="picture_slider_dotContainer">
+
+                    <div class="picture_slider_dot1"></div>
+                    <div class="picture_slider_dot2"></div>
+                    <div class="picture_slider_dot3"></div>
+                    <div class="picture_slider_currentPainting"></div>
+
+
+                </div>
+
+
+
+
+                <img src="../images/painting_4.jpeg" style="width:100%"alt="Painting 4">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="picture_slider_prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="picture_slider_next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="picture_slider_caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+
+
+            <div class="picture_slider_column">
+                <img class="picture_slider_demo, picture_slider_img" src="../images/painting_1.jpeg" onclick="currentSlide(1)" alt="Painting 1">
+            </div>
+
+            <div class="picture_slider_column">
+                <img class="picture_slider_demo, picture_slider_img" src="../images/painting_2.jpeg" onclick="currentSlide(2)" alt="Painting 2">
+            </div>
+
+            <div class="picture_slider_column">
+                <img class="picture_slider_demo, picture_slider_img" src="../images/painting_3.jpeg" onclick="currentSlide(3)" alt="Painting 3">
+            </div>
+
+            <div class="picture_slider_column">
+                <img class="picture_slider_demo, picture_slider_img" src="../images/painting_4.jpeg" onclick="currentSlide(4)" alt="Painting 4">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

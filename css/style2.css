@@ -1,0 +1,1810 @@
+/* ******************************* COVER PAGE ******************************** */
+
+/* Setting the background colour for the body*/
+.cover_page_body {
+  background-color: black;
+}
+
+/* Setting a central reference point that scales with resolution */
+.cover_page_referencePoint {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid transparent;
+  padding: 10px;
+}
+
+/* Position of the main logo on the page with reference to the central reference point */
+.cover_page_mainLogo {
+  position: absolute;
+  top: -1800%;
+  left: -900%;
+  z-index: 1;
+}
+
+/* id for glowing animation */
+
+#lamp-glow {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+  background-color: transparent;
+
+  position: absolute;
+  animation: glowing 2s ease-in-out infinite alternate;
+  -webkit-animation: glowing 8s ease-in-out infinite alternate;
+  -moz-animation: glowing 8s ease-in-out infinite alternate;
+}
+
+/* Parameters for glowing animation */
+
+@keyframes glowing {
+  from {
+    box-shadow: 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red,
+      0 0 80px red, 0 100 px red, 0 0 120px red, 0 0 140px red, 0 0 160px,
+      red 0 0 180px rgb(231, 231, 225);
+  }
+
+  to {
+    box-shadow: 0 0 50px rgb(226, 225, 215), 0 0 60px rgb(226, 225, 215),
+      0 0 70px rgb(226, 225, 215), 0 0 80px #ffed4d, 0 0 90px #ffed4d,
+      0 0 100px whitesmoke, 0 0 100px whitesmoke, 0 0 120px #fff,
+      0 0 130px whitesmoke, 0 0 140px whitesmoke, 0 0 150px whitesmoke;
+  }
+}
+
+/* #Remnants of older fade in animation#
+
+@keyframes fadeIn {
+from{opacity: 0;}
+ to{opacity: 0.2;} 
+}
+
+@keyframes fadeOut {
+from{opacity: 0.2;}
+ to{opacity: 0;} 
+}
+
+.fadeInAnimation{
+
+animation-name: fadeIn ;
+animation-duration: 2s;  
+animation-iteration-count: 2; 
+animation-direction: alternate;
+opacity: 0;
+
+}
+
+#fade-in1{
+
+margin-left:220px;
+}
+
+#fade-in2{
+animation-delay: 5s;
+margin-left:280px;
+}
+
+#fade-in3{
+animation-delay: 10s;
+margin-left:140px;
+}
+
+*/
+
+/* Parameters for "enter link". Position in relation to central reference point */
+
+.cover_page_link {
+  position: absolute;
+  top: 200%;
+  left: -800%;
+  width: 250px;
+  color: #ece6c2;
+  font-size: 100px;
+
+  text-align: center;
+  font-family: plaster;
+}
+
+/* ******************************************************* */
+
+/* ***************************** AGE VERIFICATION *************************** */
+
+/* Background parameters */
+
+.age_verification_body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background: rgb(5, 44, 25);*/
+  background-image: linear-gradient(#31554a 70%, #081412 10%, rgb(9, 63, 58));
+}
+
+/* Central reference point */
+.age_verification_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid transparent;
+  padding: 10px;
+}
+
+/* Shape parameters */
+
+.age_verification_background-glow {
+  position: absolute;
+  top: -900%;
+  left: 600%;
+  transform: translateX(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(209, 208, 154);
+  box-shadow: 0 0 190px 180px rgb(209, 208, 154);
+}
+
+.age_verification_rectangle {
+  position: absolute;
+  top: -720%;
+  left: 40.5%;
+  background: rgb(2, 32, 7);
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+
+.age_verification_circle {
+  position: absolute;
+  top: -1450%;
+  left: 40.5%;
+  background: rgb(2, 32, 7);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.age_verification_parallelogram {
+  position: absolute;
+  top: 775%;
+  left: -360%;
+  width: 290px;
+  height: 200px;
+  transform: skew(-40deg);
+  background: black;
+  opacity: 0.25;
+}
+
+.age_verification_logo {
+  position: absolute;
+  top: -1800%;
+  left: 180%;
+}
+
+.age_verification_text-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  border: 5px solid transparent;
+  padding: 10px;
+  z-index: 2;
+}
+
+.age_verification_explanation {
+  position: absolute;
+  top: -600%;
+  left: 60%;
+  width: 250px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #ece6c2;
+  text-align: center;
+  z-index: 2;
+}
+
+.age_verification_ageVerTitle {
+  position: absolute;
+  top: -1500%;
+  left: 60%;
+  width: 250px;
+  color: #ece6c2;
+  font-size: 50px;
+
+  text-align: center;
+  font-family: bebas neue;
+  z-index: 2;
+}
+
+.age_verification_enterBirth {
+  position: absolute;
+  top: 65%;
+  left: -15%;
+  width: 250px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #ece6c2;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Removing increase/decrease bars from input boxes */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Form parameters */
+
+.age_verification_form {
+  display: inline-flex;
+  display: block;
+  justify-content: space-between;
+  position: relative;
+  height: 80px;
+  top: -300%;
+  left: 75%;
+}
+
+.age_verification_input-style-day {
+  height: 40px;
+  width: 45px;
+  background: transparent;
+
+  border-width: 3px;
+  border-color: #ece6c2;
+  color: #ece6c2;
+  font-size: 30px;
+  text-align: center;
+}
+
+.age_verification_input-style-month {
+  height: 40px;
+  width: 45px;
+  background: transparent;
+
+  border-width: 3px;
+  border-color: #ece6c2;
+  color: #ece6c2;
+  font-size: 30px;
+  text-align: center;
+}
+
+.age_verification_input-style-year {
+  height: 40px;
+  width: 70px;
+  background: transparent;
+
+  border-width: 3px;
+  border-color: #ece6c2;
+  color: #ece6c2;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Background lettering for input boxes */
+::placeholder {
+  font-size: x-large;
+  text-align: center;
+}
+
+/*Button parameters*/
+.age_verification_button-style {
+  font-family: bebas neue;
+  font-weight: bold;
+  font-size: large;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+}
+
+.age_verification_button-position {
+  position: absolute;
+  top: 150%;
+  left: 20%;
+}
+
+/* Alert (not old enough/invalid date) parameters */
+
+.age_verification_alertContainer {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.age_verification_invalidDateContainer {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.age_verification_alertContainer.age_verification_hide {
+  display: none;
+}
+
+.age_verification_invalidDateContainer.age_verification_hide {
+  display: none;
+}
+
+.age_verification_alert,
+.age_verification_invalidDate {
+  position: absolute;
+  left: -900%;
+  top: 800%;
+
+  width: 800px;
+  padding: 10px;
+  z-index: 3;
+  box-sizing: border-box;
+
+  border-style: solid;
+  border-color: #ece6c2;
+  border-radius: 5px;
+
+  max-width: 800px;
+
+  background-color: rgb(2, 32, 7);
+  color: #ece6c2;
+  font-family: 'Courier New';
+  font-weight: bold;
+
+  text-align: center;
+  font-size: large;
+}
+
+.age_verification_close {
+  position: absolute;
+  top: 0%;
+  left: 97%;
+  font-size: large;
+  color: black;
+  cursor: pointer;
+  color: #ece6c2;
+}
+
+/* ************************************************* */
+
+/* *************************** PICTURE SLIDER ******************* */
+
+.picture_slider_row > .picture_slider_column {
+  padding: 0 1px;
+  /* Controling the padding between images in non-main view mode*/
+}
+
+.picture_slider_row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother for the clickable images of the paintings */
+
+.picture_slider_column {
+  float: left;
+  width: auto;
+}
+
+/*colume container */
+
+.picture_slider_cc {
+  position: relative;
+  top: 500px;
+  left: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: baseline;
+}
+
+/* The Modal (background) */
+
+.picture_slider_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+
+.picture_slider_modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  /*Width of the every picture when a main view has been picked */
+  max-width: 1200 px;
+}
+
+.picture_slider_mySlides {
+  display: none;
+}
+
+.picture_slider_img {
+  display: block;
+  max-width: 230px;
+  max-height: 95px;
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+}
+
+/* The Close Button */
+
+.picture_slider_close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35 px;
+  font-weight: bold;
+}
+
+.picture_slider_close:hover,
+.picture_slider_close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+
+.picture_slider_prev,
+.picture_slider_next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+
+  width: auto;
+  padding: 16 px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.picture_slider_next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a littler bit see-through */
+
+.picture_slider_prev:hover,
+.picture_slider_next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.picture_slider_dotContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+}
+
+.picture_slider_dot1 {
+  /*position:absolute;
+    top:30%;
+    left: 900%;*/
+
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+}
+
+.picture_slider_dot2 {
+  /*
+    position:absolute;
+    
+    top:30%;
+    left:850%; */
+
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+}
+
+.picture_slider_dot3 {
+  /*
+    position:absolute;
+    top: 30%;
+    left:800%;*/
+
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+}
+
+.picture_slider_dot4 {
+  /*
+    position:absolute;
+    top: 30%;
+    */
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+}
+
+.picture_slider_currentPainting {
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+  background-color: rgb(165, 165, 164);
+}
+
+/*Number text */
+.picture_slider_numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.picture_slider_caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16 px;
+  color: white;
+}
+
+img.picture_slider_demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.picture_slider_hover-shadow {
+  transition: 0.3s;
+}
+
+.picture_slider_hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ************************************************************* */
+
+/* **************************VIDEO SLIDER *********************** */
+
+.video_slider_body {
+  color: #ff0000;
+}
+.csslider {
+  -moz-perspective: 1300px;
+  -ms-perspective: 1300px;
+  -webkit-perspective: 1300px;
+  perspective: 1300px;
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  top: 300px;
+
+  margin-bottom: 22px;
+}
+.csslider > input {
+  display: none;
+}
+
+.csslider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+  margin-left: -300%;
+}
+.csslider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+  margin-left: -200%;
+}
+.csslider > input:nth-of-type(2):checked ~ ul li:first-of-type {
+  margin-left: -100%;
+}
+.csslider > input:nth-of-type(1):checked ~ ul li:first-of-type {
+  margin-left: 0%;
+}
+.csslider > ul {
+  position: relative;
+  width: 820px;
+  height: 420px;
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  border: 10px solid #ffffff;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.csslider > ul > li {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 15px;
+  font-size: initial;
+  line-height: normal;
+  -moz-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: normal;
+}
+.csslider > .navigation {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  z-index: 10;
+  margin-bottom: -10px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.csslider > .navigation > div {
+  margin-left: -100%;
+}
+.csslider > .navigation label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 4px;
+  padding: 4px;
+  background: #3a3a3a;
+}
+.csslider > .navigation label:hover:after {
+  opacity: 1;
+}
+.csslider > .navigation label:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+  background: #ff0000;
+  border-radius: 50%;
+  padding: 6px;
+  opacity: 0;
+}
+.csslider > .arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.csslider.inside .navigation {
+  bottom: 10px;
+  margin-bottom: 10px;
+}
+.csslider
+  > input:nth-of-type(1):checked
+  ~ .navigation
+  label:nth-of-type(1):after,
+.csslider
+  > input:nth-of-type(2):checked
+  ~ .navigation
+  label:nth-of-type(2):after,
+.csslider
+  > input:nth-of-type(3):checked
+  ~ .navigation
+  label:nth-of-type(3):after,
+.csslider
+  > input:nth-of-type(4):checked
+  ~ .navigation
+  label:nth-of-type(4):after,
+r {
+  opacity: 1;
+}
+.csslider > .arrows {
+  position: absolute;
+  left: -31px;
+  top: 50%;
+  width: 100%;
+  height: 26px;
+  padding: 0 31px;
+  z-index: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.csslider > .arrows label {
+  display: none;
+  position: absolute;
+  top: -50%;
+  padding: 13px;
+  box-shadow: inset 2px -2px 0 1px #3a3a3a;
+  cursor: pointer;
+  -moz-transition: box-shadow 0.15s, margin 0.15s;
+  -o-transition: box-shadow 0.15s, margin 0.15s;
+  -webkit-transition: box-shadow 0.15s, margin 0.15s;
+  transition: box-shadow 0.15s, margin 0.15s;
+}
+.csslider > .arrows label:hover {
+  box-shadow: inset 3px -3px 0 2px #ff0000;
+  margin: 0 0px;
+}
+.csslider > .arrows label:before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  height: 300%;
+  width: 300%;
+}
+.csslider.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4) {
+  display: block;
+  left: 0;
+  right: auto;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.csslider.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4) {
+  display: block;
+  right: 0;
+  left: auto;
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+/*#region MODULES */
+/*#endregion */
+/*___________________________________ LAYOUT ___________________________________ */
+
+.video_slider_ul {
+  padding-left: 40px;
+}
+
+#slider1 {
+  margin: 20px;
+  font-family: 'Lato';
+}
+#slider1 > input:nth-of-type(3):checked ~ ul #bg {
+  width: 80%;
+  padding: 22px;
+  -moz-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
+  -webkit-transition: 0.5s 0.5s;
+  transition: 0.5s 0.5s;
+}
+#slider1 > input:nth-of-type(3):checked ~ ul #bg div {
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  -moz-transition: 0.5s 0.9s;
+  -o-transition: 0.5s 0.9s;
+  -webkit-transition: 0.5s 0.9s;
+  transition: 0.5s 0.9s;
+}
+
+/*#videos */
+/* ************************** LAYOUT ************************** */
+
+video {
+  width: 710px;
+  height: 400px;
+  background: transparent url('') no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.video_slider_body {
+  color: #ff0000;
+}
+.csslider {
+  -moz-perspective: 1300px;
+  -ms-perspective: 1300px;
+  -webkit-perspective: 1300px;
+  perspective: 1300px;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  margin-bottom: 22px;
+}
+.csslider > input {
+  display: none;
+}
+
+.csslider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+  margin-left: -300%;
+}
+.csslider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+  margin-left: -200%;
+}
+.csslider > input:nth-of-type(2):checked ~ ul li:first-of-type {
+  margin-left: -100%;
+}
+.csslider > input:nth-of-type(1):checked ~ ul li:first-of-type {
+  margin-left: 0%;
+}
+
+.csslider > ul {
+  position: relative;
+  width: 550px; /*width of view box*/
+  height: 350px;
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  border: 5px solid transparent; /*border of the box*/
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.csslider > ul > li {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 15px;
+  font-size: initial;
+  line-height: normal;
+  -moz-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: normal;
+}
+.csslider > .navigation {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  z-index: 10;
+  margin-bottom: -10px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.csslider > .navigation > div {
+  margin-left: -100%;
+}
+.csslider > .navigation label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 4px;
+  padding: 4px;
+  background: #3a3a3a;
+}
+.csslider > .navigation label:hover:after {
+  opacity: 1;
+}
+.csslider > .navigation label:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -6px;
+  margin-top: -6px;
+  background: #ff0000;
+  border-radius: 50%;
+  padding: 6px;
+  opacity: 0;
+}
+.csslider > .arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.csslider.inside .navigation {
+  bottom: 10px;
+  margin-bottom: 10px;
+}
+.csslider
+  > input:nth-of-type(1):checked
+  ~ .navigation
+  label:nth-of-type(1):after,
+.csslider
+  > input:nth-of-type(2):checked
+  ~ .navigation
+  label:nth-of-type(2):after,
+.csslider
+  > input:nth-of-type(3):checked
+  ~ .navigation
+  label:nth-of-type(3):after,
+.csslider
+  > input:nth-of-type(4):checked
+  ~ .navigation
+  label:nth-of-type(4):after {
+  opacity: 1;
+}
+.csslider > .arrows {
+  position: absolute;
+  left: -31px;
+  top: 50%;
+  width: 100%; /*position of arrows*/
+  height: 26px;
+  padding: 0 31px;
+  z-index: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.csslider > .arrows label {
+  display: none;
+  position: absolute;
+  top: -50%;
+  padding: 13px;
+  box-shadow: inset 2px -2px 0 1px #3a3a3a;
+  cursor: pointer;
+  -moz-transition: box-shadow 0.15s, margin 0.15s;
+  -o-transition: box-shadow 0.15s, margin 0.15s;
+  -webkit-transition: box-shadow 0.15s, margin 0.15s;
+  transition: box-shadow 0.15s, margin 0.15s;
+}
+.csslider > .arrows label:hover {
+  box-shadow: inset 3px -3px 0 2px #ff0000;
+  margin: 0 0px;
+}
+.csslider > .arrows label:before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  height: 300%;
+  width: 300%;
+}
+.csslider.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4) {
+  display: block;
+  left: 0;
+  right: auto;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.csslider.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4) {
+  display: block;
+  right: 0;
+  left: auto;
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+/*#region MODULES */
+/*#endregion */
+/*___________________________________ LAYOUT ___________________________________ */
+
+ul {
+  padding-left: 40px;
+}
+
+#slider1 {
+  margin: 20px;
+  font-family: 'Lato';
+}
+#slider1 > input:nth-of-type(3):checked ~ ul #bg {
+  width: 80%;
+  padding: 22px;
+  -moz-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
+  -webkit-transition: 0.5s 0.5s;
+  transition: 0.5s 0.5s;
+}
+#slider1 > input:nth-of-type(3):checked ~ ul #bg div {
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  -moz-transition: 0.5s 0.9s;
+  -o-transition: 0.5s 0.9s;
+  -webkit-transition: 0.5s 0.9s;
+  transition: 0.5s 0.9s;
+}
+
+video {
+  width: 550px; /*Height and Width of the videos in the box*/
+  height: 350px;
+  background: transparent url('') no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.video_slider_position {
+  position: absolute;
+  top: 30%;
+  left: 38%;
+}
+
+/* ******************************************************************
+
+    /* ******************************** AUDIO ELEMENTS ********************** */
+
+.audio_samples {
+  background-color: transparent;
+  padding: 0;
+}
+
+.audio_samples_trackTitlePosition {
+  position: absolute;
+  z-index: 1;
+  height: 600px;
+  left: -500%;
+  top: 1000%;
+  width: 100%;
+  max-width: 600px;
+}
+
+.album_position {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid transparent;
+  padding: 10px;
+}
+
+.audio_samples_trackTitle {
+  padding: 0;
+  width: 60%;
+  text-align: center;
+
+  font-family: 'Courier New';
+  font-weight: bold;
+  padding: 0;
+  margin-left: 10px;
+  font-size: x-large;
+  color: whitesmoke;
+}
+
+.row {
+  justify-content: center;
+  padding: 12px;
+}
+
+audio::-webkit-media-controls-enclosure,
+video::-webkit-media-controls-enclosure {
+  width: 80%;
+  max-width: 800px;
+  height: 5px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  opacity: 0.7;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #df3b3b;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color: #d89292;
+}
+
+.audio_samples_trackPosition {
+  position: absolute;
+  z-index: 1;
+  height: 200px;
+  top: 850%;
+  left: -600%;
+}
+
+.audio_samples_show1 {
+  background-image: url('../images/audio_image1.jpg');
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+.audio_samples_show2 {
+  background-image: url('../images/audio_image2.jpeg');
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.audio_samples_row {
+  justify-content: space-around;
+}
+
+/* ****************************************************************** */
+:root {
+  --white: #ffffff;
+  --dark-grey: #222529;
+  --beige: #ece6c2;
+  --red: #d64f49;
+  --dark-green: #1d332c;
+  --yellow: #d2a24c;
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: var(--dark-grey);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 89, 76, 1) 19%,
+    rgba(188, 193, 122, 1) 100%
+  );
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+h1 {
+  font-family: 'Bebas neue';
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+p {
+  font-family: 'bebas neue';
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+
+/* Agegate page
+ */
+.logo-round {
+  width: 150px;
+}
+.door-top {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: var(--dark-grey);
+}
+
+.background-dark {
+  width: 100%;
+  height: 100px;
+  background: var(--dark-grey);
+}
+
+/* Header start */
+nav {
+  background-color: var(--dark-grey);
+  max-height: 70px !important;
+  font-family: mountain-date;
+  text-transform: uppercase;
+  z-index: 999;
+}
+.btn-main {
+  background-color: var(--beige);
+  width: 110px;
+  border: 2px solid var(--dark-grey) !important;
+  color: var(--dark-grey);
+  font-family: 'bebas neue';
+  letter-spacing: 0.1em;
+}
+
+.btn-ticket {
+  background-color: var(--red) !important;
+}
+
+.btn-main:hover,
+.btn-ticket:hover {
+  color: var(--yellow);
+  background: black !important;
+}
+.dropdown-menu {
+  background-color: var(--beige);
+  font-family: 'bebas neue';
+  letter-spacing: 0.1em;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--yellow);
+}
+/* Header end */
+
+main {
+  max-width: 100%;
+  min-height: 83vh;
+}
+
+/* 
+  HOME PAGE START
+*/
+
+/* Home page hero start */
+#home-page-hero {
+  background-image: url('../img/mountain-01.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+}
+#top-hero {
+  height: 79vh;
+}
+.moon-wrapper p {
+  font-family: plaster;
+  font-size: 4vw !important;
+  line-height: 0.8;
+}
+.moon-wrapper .festival {
+  font-size: 40px;
+}
+.mountain-message {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.mountain-title {
+  font-family: plaster;
+  font-size: 3vw;
+  text-align: center;
+  line-height: 0.8;
+}
+.mountain-date {
+  font-family: 'bebas neue';
+  font-size: 2vw;
+  color: var(--beige);
+}
+
+.lineup {
+  font-family: plaster;
+  color: var(--beige);
+  font-size: 3vw;
+}
+.lineup-p p {
+  font-family: 'bebas neue' !important;
+}
+#bottom-hero {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    180deg,
+    rgba(46, 89, 76, 0.3) 19%,
+    rgba(29, 51, 44, 1) 100%
+  );
+}
+
+.day-1,
+.day-2 {
+  color: var(--beige);
+  font-family: 'bebas neue';
+  font-size: 18px;
+}
+
+/* Hero end */
+
+/* gallery section starts*/
+
+#carousel-section-wrapper {
+  background-color: var(--dark-green);
+  height: 600px;
+}
+
+.courousel-header {
+  background-color: var(--beige);
+  border: 3px solid black !important;
+}
+
+.courousel-header h1 {
+  font-size: 2.5em;
+}
+
+/* gallery ends */
+
+/*
+  HOME PAGE END
+*/
+
+/*
+TICKETS PAGE STARTS
+ */
+#tickets-section {
+  min-height: 60vh;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-image: url(../img/WDCSS-Backgrond2-a-01.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.container-frame {
+  width: 70%;
+  margin: auto;
+}
+
+.ticket-title {
+  border: 3px solid black !important;
+  background: var(--beige);
+}
+.ticket-subtitle {
+  border: 3px solid black !important;
+  background: var(--beige);
+  border-bottom: none !important;
+}
+
+.tickets-price-wrapper {
+  background-color: var(--beige);
+  border: 3px solid black !important;
+  height: 600px;
+}
+.left-column-wrapper {
+  border: 3px solid black !important;
+  border-right: none !important;
+  height: 600px;
+  background-color: var(--yellow);
+}
+
+.text-description p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#saturday,
+#sunday,
+#weekend,
+#weekend-vip,
+#order-summary {
+  width: 70%;
+  margin: auto;
+}
+.day-title h5 {
+  background: var(--yellow);
+  font-size: 18px;
+  border-bottom: #222529 solid;
+}
+
+#order-summary a {
+  background: var(--yellow);
+}
+.counter {
+  min-width: 30px !important;
+}
+
+/* PAYMENT PAGE STARTS */
+
+.wrapper {
+  padding: 5rem !important;
+}
+.card-header,
+.card-body {
+  background-color: var(--beige);
+  font-family: 'bebas neue';
+  letter-spacing: 0.1em;
+}
+
+.card-body input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-control:focus {
+  box-shadow: 0.5px 0px 0px 0px #fff !important;
+  border-color: var(--yellow);
+}
+/*
+ABOUT PAGE STARTS
+ */
+#about-page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../img/mountain-01-01.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.timeline-header {
+  text-align: center;
+  box-sizing: border-box;
+  height: auto;
+  background-image: url(../img/carousel-1-01.jpg);
+  background-size: 100%;
+  background-size: cover;
+}
+.timeline-header-title {
+  color: white;
+  font-size: 40px;
+  text-shadow: #222529;
+  font-family: 'bebas neue';
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin: 0;
+}
+
+.timeline-header-subtitle {
+  color: white;
+  font-family: 'bebas neue';
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 10px auto;
+  font-weight: normal;
+  text-shadow: #222529;
+}
+.timeline-header p {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  padding: 15px;
+  background-color: rgba(243, 199, 88, 0.8);
+}
+.timeline-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 10px;
+  background-color: var(--beige);
+  border: black 3px solid;
+  margin-bottom: 20px;
+}
+
+/* responsive about page */
+@media only screen and (min-width: 768px) {
+  .timeline::before {
+    position: absolute;
+    left: 52%;
+    width: 3px;
+    height: 100%;
+    transform: translateX(-40%);
+    content: '';
+    background: black;
+  }
+  .timeline-header-title {
+    font-size: 66px;
+  }
+  .timeline-header-subtitle {
+    font-size: 40px;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translate(-20px);
+    border-radius: 100px 0px 20px 20px;
+    text-align: end;
+  }
+
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translate(20px);
+    border-radius: 0px 100px 20px 20px;
+  }
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    top: 0;
+  }
+  .timeline ul li:nth-child(odd)::after {
+    right: -23px;
+    transform: translate(50%, -50%);
+  }
+  .timeline ul li:nth-child(even)::after {
+    left: -23px;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline ul li:hover:after {
+    background-color: var(--yellow);
+    transition: 0.2s;
+  }
+  .timeline ul li:hover {
+    opacity: 100%;
+    filter: blur(0px);
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* 
+/* 
+ABOUT PAGE ENDS
+ */
+
+/* ARTIST PAGE STARTS */
+
+#artist-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-position: center center;
+  background-size: cover;
+}
+.artist-title {
+  background: var(--yellow);
+}
+.icon-profile {
+  color: var(--dark-grey);
+  font-size: 20px;
+  text-align: center;
+}
+.left-column-wrapper-yellow {
+  border: 3px solid black !important;
+  height: 730px;
+  background: var(--yellow);
+}
+.artist-country h5 {
+  color: var(--yellow);
+  font-family: 'bebas neue';
+  letter-spacing: 0.2em;
+}
+.bio {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.icon-profile:hover {
+  color: var(--beige);
+}
+
+.video-wrapper {
+  background-color: #222529;
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+.artist-content-wrapper {
+  background-color: var(--beige);
+  border: black 3px solid;
+}
+
+@media only screen and (max-width: 768px) {
+  .left-column {
+    display: none;
+  }
+  .bio {
+    font-size: 12px;
+  }
+}
+
+/* artist-lightbox */
+
+.gallery-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+}
+
+.gallery-wrapper img {
+  width: 100px;
+  height: 100px;
+}
+
+.gallery-wrapper img:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 233, 214, 0.5);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: black;
+}
+
+/* ARTIST PAGE ENDS */
+
+/* MUSICIAN PAGE STARTS */
+
+#artist-section {
+  min-height: 60vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-position: center center;
+  background-size: cover;
+}
+.musician-title {
+  background: var(--red);
+}
+.text-description {
+  padding: 35px;
+  height: 100%;
+}
+.icon-profile {
+  color: var(--dark-grey);
+  font-size: 20px;
+  text-align: center;
+}
+.left-column-wrapper-red {
+  border: 3px solid black !important;
+  background: var(--red);
+  height: 730px;
+}
+.musician-country h5 {
+  color: #d64f49;
+  font-family: 'bebas neue';
+  letter-spacing: 0.2em;
+}
+.bio {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.icon-profile:hover {
+  color: var(--beige);
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+/*  
+MUSICIAN PAGE ENDS
+ */
+
+/* footer */
+#footer {
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--dark-green);
+}
+#footer a {
+  color: var(--beige);
+  font-size: 30px;
+  padding: 20px;
+}
+#footer a:hover {
+  color: var(--yellow);
+  font-size: 30px;
+  padding: 20px;
+}
+#footnote {
+  padding-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plaster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style2.css">
+        <title>Age Verification</title>
+    </head>
+
+    <body class="age_verification_body">
+
+        <div class="age_verification_container">
+            <div class="age_verification_background-glow"></div>
+            <div class="age_verification_rectangle">
+                <span>hrll</span>
+            </div>
+            <div class="age_verification_circle"></div>
+            <div class="age_verification_parallelogram"></div>
+        </div>
+
+        <div class="age_verification_text-container">
+            <img src="../images/logo.png" alt="Festival Logo" class="age_verification_logo" width="200" height="200">
+        </div>
+
+        <div class="age_verification_text-container">
+
+            <p class="age_verification_explanation"> You must be 18 years old or older to enter this site. </p>
+
+        </div>
+
+        <div class="age_verification_text-container">
+
+            <p class="age_verification_ageVerTitle"> AGE VERIFICATION</p>
+        </div>
+
+        <div class="age_verification_text-container">
+
+            <form class="age_verification_form" id="birthDate">
+                <div>
+
+                    <input class="age_verification_input-style-day" type="number" id="day" max="31" placeholder="DD"
+                        required />
+                    <input class="age_verification_input-style-month" type="number" id="month" max="12" placeholder="MM"
+                        required />
+                    <input class="age_verification_input-style-year" type="number" id="year" max="9999"
+                        placeholder="YYYY" required />
+
+                </div>
+
+                <div>
+                    <p class="age_verification_enterBirth"> Please enter your date of birth </p>
+                </div>
+
+                <div class="age_verification_button-position">
+                    <input class="age_verification_button-style" type="submit" value="LEAVE" onclick="notOldEnough();">
+                    <input class="age_verification_button-style" type="submit" value="ENTER" id="checkAge"
+                        onclick="ageCheck();">
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <div class="age_verification_alertContainer age_verification_hide">
+            <div class="age_verification_alert">
+                <span id="msg"></span>
+                <span class="age_verification_close">X</span>
+            </div>
+
+        </div>
+
+
+        <div class="age_verification_invalidDateContainer age_verification_hide">
+            <div class="age_verification_invalidDate">
+                <span id="dateErrorMsg"></span>
+                <span class="age_verification_close">X</span>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script src="./js/age_verification_script.js"></script>
+    </body>
+
+</html>
