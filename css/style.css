@@ -36,14 +36,6 @@ p {
   box-shadow: none;
 }
 
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 14px;
-  }
-  h5 {
-    font-size: 14px;
-  }
-}
 
 /* Agegate page
  */
@@ -71,6 +63,7 @@ nav {
   max-height: 70px !important;
   font-family: mountain-date;
   text-transform: uppercase;
+  z-index: 999;
 }
 .btn-main {
   background-color: var(--beige);

@@ -105,16 +105,22 @@
                                     <div class="card-body" style="height:flex">
                                         <div class="form-group">
                                             <label for="name" class="control-label">CARD HOLDER NAME</label>
-                                            <input type="text" id="name" class="input-lg form-control">
+                                            <input type="text" id="name" class="input-lg form-control"
+                                                autocomplete="off">
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label for="email" class="control-label">EMAIL</label>
+                                            <input id="email" class="input-lg form-control cc-number" type="email"
+                                                autocomplete="off">
                                         </div>
                                         <div class="form-group mt-3" id="cc-number-wrapper">
                                             <label for="cc-number" class="control-label">CARD NUMBER</label>
                                             <input id="cc-number" class="input-lg form-control cc-number" type="text"
-                                                maxlength="16">
+                                                maxlength="16" autocomplete="off">
                                         </div>
-                                        <p class="text-danger" id="cc-number-error"></p>
+
                                         <div class="row  mt-4">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 col-lg-6 col-sm-12">
                                                 <div class="form-group">
                                                     <label for="cc-exp" class="control-label">EXPIRATION
                                                         DATE</label>
@@ -123,13 +129,12 @@
                                                         maxlength="5">
                                                 </div>
                                             </div>
-                                            <p class="text-danger" id="cc-exp-error"></p>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 col-lg-6 col-sm-12">
                                                 <div class="form=group">
                                                     <label for="cc-cvc" class="control-label">CVC</label>
                                                     <input type="tel" id="cc-cvc"
                                                         class="input-lg form-control cc-number" autocomplete="off"
-                                                        placeholder="••••" name="">
+                                                        placeholder="•••" maxlength="3">
                                                 </div>
                                             </div>
                                         </div>

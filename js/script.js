@@ -221,14 +221,13 @@ $(function () {
   //PAYMENT PAGE STARTS//
   $('#cc-number').on('input', function (e) {
     if (isNaN(e.target.value)) {
-      $('#cc-number-error').text('Only numbers are required')
+      $(this).addClass('is-invalid')
     } else {
       if (
         (e.target.value.length > 1 && e.target.value.length < 16) ||
         e.target.value.length > 16
       ) {
         $(this).addClass('is-invalid')
-        $('#cc-number-error').text('Invalid credit card number')
       } else if (e.target.value.length == 16) {
         $('#cc-number-error').text('')
         $(this).removeClass('is-invalid')
@@ -238,22 +237,38 @@ $(function () {
   })
 
   $('#cc-exp').on('input', function (e) {
-    if (isNaN(e.target.value)) {
-      $('#cc-exp-error').text('Provide valid date in the format(MM/YY)')
+    var value = e.target.value
+    if (!isGoodDate(value)) {
+      $(this).addClass('is-invalid')
     } else {
-      console.log('MESSAGE')
-      console.log(isGoodDate(e.target.value))
-      if (isGoodDate(e.target.value)) {
-        $(this).addClass('is-valid')
-      } else {
-        $(this).addClass('is-invalid')
-        $('#cc-exp-error').text('Invalid date provided use format(MM/YY) ')
-      }
+      $(this).removeClass('is-invalid')
+      $(this).addClass('is-valid')
     }
   })
+
   $('#name').on('input', function (e) {
     var value = e.target.value
-    if (value.length < 3 || value == '') {
+    if (!isValidName(value)) {
+      $(this).addClass('is-invalid')
+    } else {
+      $(this).removeClass('is-invalid')
+      $(this).addClass('is-valid')
+    }
+  })
+
+  $('#email').on('input', function (e) {
+    var value = e.target.value
+    if (!isValidEmail(value)) {
+      $(this).addClass('is-invalid')
+    } else {
+      $(this).removeClass('is-invalid')
+      $(this).addClass('is-valid')
+    }
+  })
+
+  $('#cc-cvc').on('input', function (e) {
+    var value = e.target.value
+    if (!isValidCvc(value)) {
       $(this).addClass('is-invalid')
     } else {
       $(this).removeClass('is-invalid')
@@ -261,8 +276,19 @@ $(function () {
     }
   })
 })
-
 function isGoodDate(value) {
-  var reGoodDate = /(0[1-9]|1[0-2])\/[0-9]{2}/
-  return reGoodDate.test(value)
+  let regex = new RegExp('^((0[1-9])|(1[0-2]))/(2[1-9])$')
+  return regex.test(value)
+}
+function isValidEmail(value) {
+  let regex = new RegExp('[a-z0-9]+@[a-z]+.[a-z]{2,3}')
+  return regex.test(value)
+}
+function isValidCvc(value) {
+  let regex = new RegExp('^([0-9]){3}$')
+  return regex.test(value)
+}
+function isValidName(value) {
+  let regex = new RegExp('[a-zA-Z]{3,}')
+  return regex.test(value)
 }

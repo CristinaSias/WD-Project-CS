@@ -1,0 +1,92 @@
+/* responsive about page */
+@media only screen and (max-width: 768px) {
+  /* HOME PAGE */
+  #home-page-hero {
+    background-image: url('../img/mountain-01-sm.png');
+  }
+  #top-hero {
+    height: auto;
+    margin: 0 !important;
+  }
+  .moon-wrapper p {
+    font-size: 34px !important;
+    line-height: 0.5;
+  }
+
+  .mountain-message {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  .mountain-title {
+    font-size: 22px;
+    text-align: center;
+    line-height: 0.1;
+    margin-top: 20px;
+  }
+  .mountain-date {
+    font-size: 22px;
+  }
+  .mountain-message .btn-main {
+    margin-top: -20px !important ;
+  }
+
+  .lineup {
+    font-size: 18px;
+  }
+  .lineup-p p {
+    font-size: 12px;
+  }
+  #bottom-hero {
+    height: auto !important;
+    margin-top: -47px !important;
+    padding-bottom: 23px;
+  }
+  .day-1 h3,
+  .day-2 h3 {
+    font-size: 16px;
+  }
+  .day-1,
+  .day-2 {
+    font-size: 18px;
+  }
+  #carousel-section-wrapper {
+    height: 300px;
+  }
+  #carousel-section-wrapper .carousel-item img {
+    height: 100%;
+  }
+
+  .courousel-header {
+    border: 3px solid black !important;
+  }
+
+  .courousel-header h1 {
+    font-size: 24px;
+  }
+
+  .courousel-header h5 {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  /* TICKET PAGE*/
+  .container-frame {
+    width: 100% !important;
+    padding: 19px !important;
+  }
+  .left-column-wrapper {
+    display: none !important;
+  }
+  #saturday,
+  #sunday,
+  #weekend,
+  #weekend-vip,
+  #order-summary {
+    width: 85%;
+    margin: auto;
+  }
+}
