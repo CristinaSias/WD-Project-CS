@@ -1,3 +1,4 @@
+//TICKETS PAGE STARTS//
 $(function () {
   //  Sartuday
   let saturdayQuantity = 0
@@ -194,4 +195,74 @@ $(function () {
       weekendQuantity
     )
   }
+
+  const lightbox = document.createElement('div')
+  lightbox.id = 'lightbox'
+  document.body.appendChild(lightbox)
+
+  const images = document.querySelectorAll('img')
+  images.forEach((image) => {
+    image.addEventListener('click', (e) => {
+      lightbox.classList.add('active')
+      const img = document.createElement('img')
+      img.src = image.src
+      while (lightbox.firstChild) {
+        lightbox.removeChild(lightbox.firstChild)
+      }
+      lightbox.appendChild(img)
+    })
+  })
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target !== e.currentTarget) return
+    lightbox.classList.remove('active')
+  })
+
+  //PAYMENT PAGE STARTS//
+  $('#cc-number').on('input', function (e) {
+    if (isNaN(e.target.value)) {
+      $('#cc-number-error').text('Only numbers are required')
+    } else {
+      if (
+        (e.target.value.length > 1 && e.target.value.length < 16) ||
+        e.target.value.length > 16
+      ) {
+        $(this).addClass('is-invalid')
+        $('#cc-number-error').text('Invalid credit card number')
+      } else if (e.target.value.length == 16) {
+        $('#cc-number-error').text('')
+        $(this).removeClass('is-invalid')
+        $(this).addClass('is-valid')
+      }
+    }
+  })
+
+  $('#cc-exp').on('input', function (e) {
+    if (isNaN(e.target.value)) {
+      $('#cc-exp-error').text('Provide valid date in the format(MM/YY)')
+    } else {
+      console.log('MESSAGE')
+      console.log(isGoodDate(e.target.value))
+      if (isGoodDate(e.target.value)) {
+        $(this).addClass('is-valid')
+      } else {
+        $(this).addClass('is-invalid')
+        $('#cc-exp-error').text('Invalid date provided use format(MM/YY) ')
+      }
+    }
+  })
+  $('#name').on('input', function (e) {
+    var value = e.target.value
+    if (value.length < 3 || value == '') {
+      $(this).addClass('is-invalid')
+    } else {
+      $(this).removeClass('is-invalid')
+      $(this).addClass('is-valid')
+    }
+  })
 })
+
+function isGoodDate(value) {
+  var reGoodDate = /(0[1-9]|1[0-2])\/[0-9]{2}/
+  return reGoodDate.test(value)
+}

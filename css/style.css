@@ -31,10 +31,18 @@ h1 {
 }
 p {
   font-family: 'bebas neue';
-  font-size: 18px;
 }
 .btn:focus {
   box-shadow: none;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 14px;
+  }
 }
 
 /* Agegate page
@@ -114,37 +122,36 @@ main {
 }
 .moon-wrapper p {
   font-family: plaster;
-  font-size: 54px !important;
-  line-height: 30px;
+  font-size: 4vw !important;
+  line-height: 0.8;
 }
 .moon-wrapper .festival {
   font-size: 40px;
 }
 .mountain-message {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
-  top: 63%;
   margin: auto;
-  width: 25em;
   text-align: center;
 }
 
 .mountain-title {
   font-family: plaster;
-  font-size: 40px;
+  font-size: 3vw;
   text-align: center;
-  line-height: 28px;
+  line-height: 0.8;
 }
 .mountain-date {
   font-family: 'bebas neue';
-  font-size: 28px;
+  font-size: 2vw;
   color: var(--beige);
 }
 
 .lineup {
   font-family: plaster;
   color: var(--beige);
+  font-size: 3vw;
 }
 .lineup-p p {
   font-family: 'bebas neue' !important;
@@ -174,23 +181,17 @@ main {
   background-color: var(--dark-green);
   height: 600px;
 }
-#carousel {
-  padding: 40px;
-  background-color: var(--beige);
-  border: 3px solid black;
-}
+
 .courousel-header {
   background-color: var(--beige);
-  border-bottom: none;
-  border-top: 3px solid black !important;
-  border-left: 3px solid black !important;
-  border-right: 3px solid black !important;
-}
-.frame-title {
-  border-right: 3px solid black !important;
+  border: 3px solid black !important;
 }
 
-/* galery ends */
+.courousel-header h1 {
+  font-size: 2.5em;
+}
+
+/* gallery ends */
 
 /*
   HOME PAGE END
@@ -201,8 +202,11 @@ TICKETS PAGE STARTS
  */
 #tickets-section {
   min-height: 60vh;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-image: url(../img/WDCSS-Backgrond2-a-01.png);
+  background-position: center center;
+  background-size: cover;
 }
 
 .container-frame {
@@ -213,7 +217,6 @@ TICKETS PAGE STARTS
 .ticket-title {
   border: 3px solid black !important;
   background: var(--beige);
-  border-bottom: none !important;
 }
 .ticket-subtitle {
   border: 3px solid black !important;
@@ -233,10 +236,11 @@ TICKETS PAGE STARTS
   background-color: var(--yellow);
 }
 
-.text-description {
-  padding: 35px;
-  height: 100%;
+.text-description p {
+  font-size: 14px;
+  line-height: 1.5;
 }
+
 #saturday,
 #sunday,
 #weekend,
@@ -258,51 +262,179 @@ TICKETS PAGE STARTS
   min-width: 30px !important;
 }
 
+/* PAYMENT PAGE STARTS */
+
+.wrapper {
+  padding: 5rem !important;
+}
+.card-header,
+.card-body {
+  background-color: var(--beige);
+  font-family: 'bebas neue';
+  letter-spacing: 0.1em;
+}
+
+.card-body input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-control:focus {
+  box-shadow: 0.5px 0px 0px 0px #fff !important;
+  border-color: var(--yellow);
+}
 /*
 ABOUT PAGE STARTS
  */
-#about-section {
-  min-height: 60vh;
-  padding-top: 50px;
-  padding-bottom: 50px;
+#about-page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../img/mountain-01-01.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-.about-title {
-  width: 100%;
-  margin: auto;
-  background-color: var(--beige);
-  border: black 3px solid;
+.timeline-header {
+  text-align: center;
+  box-sizing: border-box;
+  height: auto;
+  background-image: url(../img/carousel-1-01.jpg);
+  background-size: 100%;
+  background-size: cover;
 }
-.about-content {
-  width: 100%;
-  margin: auto;
-  background-color: var(--beige);
-  border: black 3px solid;
-  border-top: none;
-}
-.text-wrapper {
-  width: 90%;
-  margin: auto;
-  padding: 30px;
-}
-.text-wrapper p {
-  font-family: 'Courier New', Courier, monospace;
+.timeline-header-title {
+  color: white;
+  font-size: 40px;
+  text-shadow: #222529;
+  font-family: 'bebas neue';
   font-weight: bold;
-  text-align: justify;
-  text-justify: inter-word;
+  letter-spacing: 0.2em;
+  margin: 0;
 }
 
+.timeline-header-subtitle {
+  color: white;
+  font-family: 'bebas neue';
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 10px auto;
+  font-weight: normal;
+  text-shadow: #222529;
+}
+.timeline-header p {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  padding: 15px;
+  background-color: rgba(243, 199, 88, 0.8);
+}
+.timeline-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 10px;
+  background-color: var(--beige);
+  border: black 3px solid;
+  margin-bottom: 20px;
+}
+
+/* responsive about page */
+@media only screen and (min-width: 768px) {
+  .timeline::before {
+    position: absolute;
+    left: 52%;
+    width: 3px;
+    height: 100%;
+    transform: translateX(-40%);
+    content: '';
+    background: black;
+  }
+  .timeline-header-title {
+    font-size: 66px;
+  }
+  .timeline-header-subtitle {
+    font-size: 40px;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translate(-20px);
+    border-radius: 100px 0px 20px 20px;
+    text-align: end;
+  }
+
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translate(20px);
+    border-radius: 0px 100px 20px 20px;
+  }
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    top: 0;
+  }
+  .timeline ul li:nth-child(odd)::after {
+    right: -23px;
+    transform: translate(50%, -50%);
+  }
+  .timeline ul li:nth-child(even)::after {
+    left: -23px;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline ul li:hover:after {
+    background-color: var(--yellow);
+    transition: 0.2s;
+  }
+  .timeline ul li:hover {
+    opacity: 100%;
+    filter: blur(0px);
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* 
 /* 
 ABOUT PAGE ENDS
  */
 
-/*  
-ARTIST PAGE STARTS
- */
+/* ARTIST PAGE STARTS */
+
 #artist-section {
   padding-top: 50px;
   padding-bottom: 50px;
+  background-position: center center;
+  background-size: cover;
 }
-
+.artist-title {
+  background: var(--yellow);
+}
 .icon-profile {
   color: var(--dark-grey);
   font-size: 20px;
@@ -310,7 +442,6 @@ ARTIST PAGE STARTS
 }
 .left-column-wrapper-yellow {
   border: 3px solid black !important;
-  border-right: none !important;
   height: 730px;
   background: var(--yellow);
 }
@@ -340,16 +471,71 @@ ARTIST PAGE STARTS
   border: black 3px solid;
 }
 
-/*  
-ARTIST PAGE ENDS
- */
-/* MUSICIAN
- PAGE STARTS */
+@media only screen and (max-width: 768px) {
+  .left-column {
+    display: none;
+  }
+  .bio {
+    font-size: 12px;
+  }
+}
+
+/* artist-lightbox */
+
+.gallery-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+}
+
+.gallery-wrapper img {
+  width: 100px;
+  height: 100px;
+}
+
+.gallery-wrapper img:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 233, 214, 0.5);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: black;
+}
+
+/* ARTIST PAGE ENDS */
+
+/* MUSICIAN PAGE STARTS */
 
 #artist-section {
   min-height: 60vh;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-position: center center;
+  background-size: cover;
+}
+.musician-title {
+  background: var(--red);
 }
 .text-description {
   padding: 35px;
@@ -382,7 +568,7 @@ ARTIST PAGE ENDS
 
 .video-wrapper {
   width: 100%;
-  height: 300px;
+  height: 400px;
   margin: auto;
 }
 
@@ -394,6 +580,7 @@ MUSICIAN PAGE ENDS
 #footer {
   margin: 0 auto;
   text-align: center;
+  background-color: var(--dark-green);
 }
 #footer a {
   color: var(--beige);
