@@ -14,7 +14,8 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="../css/style.css">
-
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/responsive.css">
         <title>Robert Jiang</title>
     </head>
 
@@ -22,7 +23,7 @@
         <!-- navbar starts-->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="../home.html">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../img/WD-icon.png" alt="WDCSS-logo.png">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -88,7 +89,7 @@
                                     <h1>MUSICIAN</h1>
                                 </div>
                             </div>
-                            <div class="col-lg-6 ticket-subtitle">
+                            <div class="col-lg-6 musician-subtitle">
                                 <div class="text-center pt-2">
                                     <h1>Robert JIANG</h1>
                                 </div>
@@ -100,10 +101,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ticket-content">
+                    <div class="musician-content">
                         <div class="row g-0">
-                            <div class="col-lg-3 left-column">
-                                <div class=" d-flex flex-column left-column-wrapper-red">
+                            <div class="col-lg-3 left-column left-column-wrapper-red">
+                                <div class=" d-flex flex-column">
                                     <div class="musician-image p-0">
                                         <img src="../img/musician-1.png" alt="ticket image" style="width: 100%;">
                                     </div>
@@ -133,7 +134,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-9 right  artist-content-wrapper">
+                            <div class="col-lg-9 right  musician-content-wrapper">
                                 <div class="d-flex flex-column">
                                     <div>
                                         <div class=" day-title my-1 p-2 bio">
@@ -156,7 +157,45 @@
                                             <div class="row">
                                                 <h1>latest work</h1>
                                                 <div class="col-12 video-wrapper">
+                                                    <div class="csslider infinity" id="slider1">
+                                                        <input type="radio" name="slides" checked="checked"
+                                                            id="slides_1" />
+                                                        <input type="radio" name="slides" id="slides_2" />
 
+                                                        <ul class=".video_slider_ul">
+                                                            <li>
+
+                                                                <video controls>
+                                                                    <source src="../videos/video_1.mp4"
+                                                                        type="video/mp4">
+                                                                </video>
+
+                                                            </li>
+                                                            <li>
+
+                                                                <video controls>
+                                                                    <source src="../videos/video_2.mp4"
+                                                                        type="video/mp4">
+                                                                </video>
+
+                                                            </li>
+
+                                                        </ul>
+                                                        <div class="arrows">
+                                                            <label for="slides_1"></label>
+                                                            <label for="slides_2"></label>
+
+                                                            <label class="goto-first" for="slides_1"></label>
+                                                            <label class="goto-last" for="slides_2"></label>
+                                                        </div>
+                                                        <div class="navigation">
+                                                            <div>
+                                                                <label for="slides_1"></label>
+                                                                <label for="slides_2"></label>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div>

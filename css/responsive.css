@@ -1,4 +1,7 @@
 /* responsive about page */
+
+/* Medium Devices */
+
 @media only screen and (max-width: 768px) {
   /* HOME PAGE */
   #home-page-hero {
@@ -90,3 +93,14 @@
     margin: auto;
   }
 }
+
+/* SMALL DEVICES */
+
+@media only screen and (max-width: 576px) {
+  /*  Musician Page */
+
+  .csslider {
+    margin-left: 0 !important;
+  }
+}
+

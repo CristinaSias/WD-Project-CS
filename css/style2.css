@@ -619,9 +619,6 @@ img.picture_slider_hover-shadow {
 
 /* **************************VIDEO SLIDER *********************** */
 
-.video_slider_body {
-  color: #ff0000;
-}
 .csslider {
   -moz-perspective: 1300px;
   -ms-perspective: 1300px;
@@ -630,9 +627,7 @@ img.picture_slider_hover-shadow {
   display: inline-block;
   text-align: left;
   position: absolute;
-  top: 300px;
-
-  margin-bottom: 22px;
+  margin-left: 50px!important;
 }
 .csslider > input {
   display: none;
@@ -899,8 +894,7 @@ video {
 
 .csslider > ul {
   position: relative;
-  width: 550px; /*width of view box*/
-  height: 350px;
+  width: 100%; /*width of view box*/
   z-index: 1;
   font-size: 0;
   line-height: 0;
@@ -1078,9 +1072,10 @@ ul {
 }
 
 #slider1 {
-  margin: 20px;
+  margin: 0;
   font-family: 'Lato';
 }
+
 #slider1 > input:nth-of-type(3):checked ~ ul #bg {
   width: 80%;
   padding: 22px;
@@ -1102,19 +1097,13 @@ ul {
 }
 
 video {
-  width: 550px; /*Height and Width of the videos in the box*/
-  height: 350px;
-  background: transparent url('') no-repeat 0 0;
+  width: 100%; /*Height and Width of the videos in the box*/
+  margin: auto;
+  background: black url('') no-repeat 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-.video_slider_position {
-  position: absolute;
-  top: 30%;
-  left: 38%;
 }
 
 /* ******************************************************************
