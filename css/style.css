@@ -299,7 +299,9 @@ TICKETS PAGE STARTS
 .payment-btn {
   border-radius: 0;
 }
-
+.row-pay {
+  border: black solid 3px;
+}
 /* CONFIRMATION PAGE STARTS */
 
 .confirmation-wrapper {
