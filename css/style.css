@@ -457,11 +457,13 @@ ABOUT PAGE ENDS
   font-size: 20px;
   text-align: center;
 }
-.left-column-wrapper-yellow {
+.left-column{
   border: 3px solid black !important;
-  height: 730px;
+  height: auto;
   background: var(--yellow);
 }
+
+
 .artist-country h5 {
   color: var(--yellow);
   font-family: 'bebas neue';
@@ -606,4 +608,244 @@ MUSICIAN PAGE ENDS
 #footnote {
   padding-top: 20px;
   font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+/* *************************** PICTURE SLIDER ******************* */
+
+.picture_slider_row > .picture_slider_column {
+  padding: 0 1px;
+  /* Controling the padding between images in non-main view mode*/
+}
+
+.picture_slider_row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother for the clickable images of the paintings */
+
+.picture_slider_column {
+  float: left;
+  width: auto;
+}
+
+/*colume container */
+
+.picture_slider_cc {
+  position: relative;
+  display: flexbox;
+  flex-direction: row;
+  justify-content: center;
+  align-content: baseline;
+}
+
+/* The Modal (background) */
+
+.picture_slider_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+
+.picture_slider_modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  /*Width of the every picture when a main view has been picked */
+  max-width: 1200 px;
+}
+
+.picture_slider_mySlides {
+  display: none;
+}
+
+.picture_slider_img {
+  display: block;
+  max-width: 230px;
+  max-height: 95px;
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+}
+
+/* The Close Button */
+
+.picture_slider_close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35 px;
+  font-weight: bold;
+}
+
+.picture_slider_close:hover,
+.picture_slider_close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+
+.picture_slider_prev,
+.picture_slider_next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+
+  width: auto;
+  padding: 16 px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.picture_slider_next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a littler bit see-through */
+
+.picture_slider_prev:hover,
+.picture_slider_next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.picture_slider_dotContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+}
+
+.picture_slider_dot1 {
+  /*position:absolute;
+    top:30%;
+    left: 900%;*/
+
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+}
+
+.picture_slider_dot2 {
+  /*
+    position:absolute;
+    
+    top:30%;
+    left:850%; */
+
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+}
+
+.picture_slider_dot3 {
+  /*
+    position:absolute;
+    top: 30%;
+    left:800%;*/
+
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+}
+
+.picture_slider_dot4 {
+  /*
+    position:absolute;
+    top: 30%;
+    */
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+}
+
+.picture_slider_currentPainting {
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+  background-color: rgb(165, 165, 164);
+}
+
+/*Number text */
+.picture_slider_numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.picture_slider_caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16 px;
+  color: white;
+}
+
+img.picture_slider_demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.picture_slider_hover-shadow {
+  transition: 0.3s;
+}
+
+.picture_slider_hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
