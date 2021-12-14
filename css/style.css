@@ -268,14 +268,24 @@ TICKETS PAGE STARTS
 /* PAYMENT PAGE STARTS */
 
 .wrapper {
-  padding: 5rem !important;
+  padding: 2rem !important;
+  width: auto;
 }
-.card-header,
-.card-body {
+.card-header {
+  font-size: 22px !important;
+  letter-spacing: 0.01rem;
   background-color: var(--beige);
+}
+
+.payment-container {
   font-family: 'bebas neue';
-  font-size: 22px;
-  letter-spacing: 0.1em;
+  background-color: var(--beige);
+  border-radius: 0;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0.01rem;
+  padding: 10px;
+  margin: 10px 40px;
 }
 
 .card-body input {
@@ -288,6 +298,164 @@ TICKETS PAGE STARTS
 }
 .payment-btn {
   border-radius: 0;
+}
+
+/* CONFIRMATION PAGE STARTS */
+
+.confirmation-wrapper {
+  width: 480px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.confirmation-container {
+  background-color: var(--beige);
+  border: black solid 3px;
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  border-radius: 0px;
+  box-sizing: border-box;
+  padding: 80px 30px 25px 30px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.icon__success {
+  position: absolute;
+  top: -40px;
+  left: 145px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: white;
+  border: 3px solid white;
+}
+
+.icon__success i {
+  color: #60c878;
+  line-height: 67px;
+  font-size: 84px;
+}
+
+.card__msg {
+  color: var(--dark-grey);
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.card__submsg {
+  color: var(--dark-grey);
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 0px;
+}
+
+.card-body {
+  background-color: white;
+  border-radius: 0px;
+  width: 100%;
+  margin-top: 20px;
+  float: left;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.ticket-icon {
+  font-size: 59px;
+  color: black;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.customer-info {
+  display: inline-block;
+}
+
+.name-customer {
+  color: var(--dark-grey);
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.ticket-message {
+  color: var(--dark-grey);
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.confirmation-email {
+  color: var(--yellow);
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  margin-top: 0px;
+}
+
+.total-payment {
+  color: #232528;
+  font-size: 50px;
+}
+
+#euro {
+  font-size: 60%;
+}
+
+.payment-method {
+  color: var(--dark-grey);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-payment {
+  background-color: rgb(245, 245, 245);
+  border-radius: 0px !important;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+}
+
+.card-payment i {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: -25px;
+}
+
+.card-details {
+  display: inline-block;
+  text-align: left;
+}
+
+.confirmation-card-type {
+  color: #232528;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.confirmation-card-number {
+  color: var(--dark-grey);
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.back-home-btn {
+  width: 180px;
+  font-family: 'bebas neue' !important;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
 }
 
 /*
@@ -646,7 +814,7 @@ MUSICIAN PAGE ENDS
   justify-content: center;
 }
 
-.picture_slider_cc img:hover{
+.picture_slider_cc img:hover {
   opacity: 50%;
 }
 
