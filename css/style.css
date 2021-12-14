@@ -298,7 +298,18 @@ TICKETS PAGE STARTS
 }
 .payment-btn {
   border-radius: 0;
+  color: var(--dark-grey);
+  background-color: var(--yellow);
+  border: black solid 3px;
+  font-size: 24px !important;
+  letter-spacing: 0.1rem;
 }
+.payment-btn:hover {
+  background-color: var(--dark-grey);
+  color: var(--yellow);
+  border: black solid 3px;
+}
+
 .row-pay {
   border: black solid 3px;
 }
@@ -454,10 +465,18 @@ TICKETS PAGE STARTS
 }
 
 .back-home-btn {
-  width: 180px;
+  width: fit-content;
+  background-color: var(--yellow);
+  border: black solid 3px;
+  color: var(--dark-grey);
   font-family: 'bebas neue' !important;
-  font-size: 18px;
+  font-size: 23px;
   letter-spacing: 0.1rem;
+}
+.back-home-btn:hover {
+  background-color: var(--dark-grey);
+  border: black solid 3px;
+  color: var(--yellow);
 }
 
 /*
