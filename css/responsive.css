@@ -33,8 +33,13 @@
   .mountain-date {
     font-size: 22px;
   }
-  .mountain-message .btn-main {
-    margin-top: -20px !important ;
+  .mountain-message {
+    margin-top: -10px !important ;
+  }
+
+  .btn-home {
+    width: 110px;
+    font-size: 18px !important;
   }
 
   .lineup {
@@ -92,15 +97,95 @@
     width: 85%;
     margin: auto;
   }
+
+  /* ABOUT PAGE */
+
+  .timeline ul li img {
+    cursor: pointer;
+  }
+  .timeline::before {
+    position: absolute;
+    left: 52%;
+    width: 3px;
+    height: 100%;
+    transform: translateX(-40%);
+    content: '';
+    background: black;
+  }
+  .timeline-header-title {
+    font-size: 66px;
+  }
+  .timeline-header-subtitle {
+    font-size: 40px;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translate(-20px);
+    border-radius: 100px 0px 20px 20px;
+    text-align: end;
+  }
+
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translate(20px);
+    border-radius: 0px 100px 20px 20px;
+  }
+  .timeline ul li::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    top: 0;
+  }
+  .timeline ul li:nth-child(odd)::after {
+    right: -23px;
+    transform: translate(50%, -50%);
+  }
+  .timeline ul li:nth-child(even)::after {
+    left: -23px;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline ul li:hover:after {
+    background-color: var(--yellow);
+    transition: 0.2s;
+  }
+  .timeline ul li:hover {
+    opacity: 100%;
+    filter: blur(0px);
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  /* ARTISTS PAGE */
+  .left-column-wrapper-yellow,
+  .left-column {
+    display: none !important;
+  }
+  .bio-artist {
+    font-size: 12px;
+  }
 }
 
-/* SMALL DEVICES */
+/* Small Devices */
 
 @media only screen and (max-width: 576px) {
-  /*  Musician Page */
-
+  /*  MUSICIAN PAGE */
   .csslider {
     margin-left: 0 !important;
   }
 }
 
+/* tickets page */
+
+.tickets-content {
+  padding-bottom: 30px;
+}

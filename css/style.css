@@ -31,11 +31,11 @@ h1 {
 }
 p {
   font-family: 'bebas neue';
+  font-size: 22px;
 }
 .btn:focus {
   box-shadow: none;
 }
-
 
 /* Agegate page
  */
@@ -71,7 +71,16 @@ nav {
   border: 2px solid var(--dark-grey) !important;
   color: var(--dark-grey);
   font-family: 'bebas neue';
-  letter-spacing: 0.1em;
+  font-size: 21px;
+}
+
+.btn-home {
+  background-color: var(--beige);
+  width: 130px;
+  border: 2px solid var(--dark-grey) !important;
+  color: var(--dark-grey);
+  font-family: 'bebas neue';
+  font-size: 26px !important;
 }
 
 .btn-ticket {
@@ -111,7 +120,7 @@ main {
   height: auto;
 }
 #top-hero {
-  height: 79vh;
+  height: 83vh;
 }
 .moon-wrapper p {
   font-family: plaster;
@@ -148,6 +157,7 @@ main {
 }
 .lineup-p p {
   font-family: 'bebas neue' !important;
+  font-size: 24px;
 }
 #bottom-hero {
   height: 80vh;
@@ -217,20 +227,22 @@ TICKETS PAGE STARTS
   border-bottom: none !important;
 }
 
-.tickets-price-wrapper {
+.tickets-content {
   background-color: var(--beige);
   border: 3px solid black !important;
-  height: 600px;
+  height: auto;
+
 }
-.left-column-wrapper {
+.left-column-tickets {
   border: 3px solid black !important;
   border-right: none !important;
-  height: 600px;
+  height: auto;
   background-color: var(--yellow);
+
 }
 
 .text-description p {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -264,16 +276,23 @@ TICKETS PAGE STARTS
 .card-body {
   background-color: var(--beige);
   font-family: 'bebas neue';
+  font-size: 22px;
   letter-spacing: 0.1em;
 }
 
 .card-body input {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 0;
+  
 }
 .form-control:focus {
   box-shadow: 0.5px 0px 0px 0px #fff !important;
   border-color: var(--yellow);
 }
+.payment-btn{
+border-radius: 0;
+}
+
 /*
 ABOUT PAGE STARTS
  */
@@ -315,7 +334,6 @@ ABOUT PAGE STARTS
   text-shadow: #222529;
 }
 .timeline-header p {
-  font-size: 16px;
   letter-spacing: 0.05em;
   line-height: 1.2;
   padding: 15px;
@@ -328,6 +346,12 @@ ABOUT PAGE STARTS
   align-items: center;
   justify-content: center;
 }
+
+.timeline ul li img:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
 .timeline {
   width: 80%;
   height: auto;
@@ -443,7 +467,7 @@ ABOUT PAGE ENDS
   font-family: 'bebas neue';
   letter-spacing: 0.2em;
 }
-.bio {
+.bio-artist {
   width: 70%;
   margin: auto;
   text-align: justify;
@@ -456,15 +480,6 @@ ABOUT PAGE ENDS
 .artist-content-wrapper {
   background-color: var(--beige);
   border: black 3px solid;
-}
-
-@media only screen and (max-width: 768px) {
-  .left-column {
-    display: none;
-  }
-  .bio {
-    font-size: 12px;
-  }
 }
 
 /* artist-lightbox */
@@ -552,11 +567,12 @@ ABOUT PAGE ENDS
 .icon-profile:hover {
   color: var(--beige);
 }
-.musician-content-wrapper{
+.musician-content-wrapper {
   background-color: var(--beige);
   border: black solid 3px;
 }
-.musician-subtitle, .musician-country{
+.musician-subtitle,
+.musician-country {
   background-color: var(--beige);
   border: black solid 3px !important;
 }
