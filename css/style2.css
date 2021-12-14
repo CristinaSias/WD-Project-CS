@@ -1106,103 +1106,174 @@ video {
   background-size: cover;
 }
 
-/* ******************************************************************
+
+    /* ******************************************************************
 
     /* ******************************** AUDIO ELEMENTS ********************** */
 
-.audio_samples {
-  background-color: transparent;
-  padding: 0;
+/* style of audio elements */
+
+
+audio::-webkit-media-controls-enclosure, video::-webkit-media-controls-enclosure {
+    width: 80%;
+    max-width: 800px;
+    height: 5px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: whitesmoke;
+    opacity: 0.7;
+
 }
 
-.audio_samples_trackTitlePosition {
-  position: absolute;
-  z-index: 1;
-  height: 600px;
-  left: -500%;
-  top: 1000%;
-  width: 100%;
-  max-width: 600px;
-}
-
-.album_position {
-  display: flex;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border: 5px solid transparent;
-  padding: 10px;
-}
-
-.audio_samples_trackTitle {
-  padding: 0;
-  width: 60%;
-  text-align: center;
-
-  font-family: 'Courier New';
-  font-weight: bold;
-  padding: 0;
-  margin-left: 10px;
-  font-size: x-large;
-  color: whitesmoke;
-}
-
-.row {
-  justify-content: center;
-  padding: 12px;
-}
-
-audio::-webkit-media-controls-enclosure,
-video::-webkit-media-controls-enclosure {
-  width: 80%;
-  max-width: 800px;
-  height: 5px;
-  background-color: transparent;
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
-  opacity: 0.7;
-}
 
 audio::-webkit-media-controls-play-button {
-  background-color: #df3b3b;
-  border-radius: 50%;
+    background-color: #df3b3b;
+    border-radius: 50%;
+    
+    
+
 }
 
 audio::-webkit-media-controls-play-button:hover {
-  background-color: #d89292;
+    background-color: #d89292;
 }
+
+
+
+
+
+audio::-webkit-media-controls-current-time-display {
+  color: whitesmoke;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: whitesmoke;
+}
+
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #df3b3b;
+    border-radius: 50%;
+ 
+}
+
 
 .audio_samples_trackPosition {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   height: 200px;
-  top: 850%;
-  left: -600%;
+  top: 1%;
+  left:12%;
+
 }
 
-.audio_samples_show1 {
-  background-image: url('../images/audio_image1.jpg');
+/* Background images for audio players */
+
+.audioPlayer{
+
+     width: 100%;
+     height: 100px;
+     margin:5px;
+
+     position: relative;
+
+     background-image: url("../img/audio_image1.jpg");
+
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+
+     border-style:solid;
+     border-width:3px;
+
+
+}
+
+/* Position of audio elements */
+
+.audioPlayer audio{ 
+    position:absolute;
+    bottom:0;
+    left: -5%;
+    width:80%;
+   
+}
+
+
+.audioTrackTitle{
+  position:absolute;
+  left: 5%;
+  width:100%;
+
+  font-family: 'Courier New';
+  color:white;
+  font-weight:bold;
+  font-size: x-large;
+}               
+
+
+.audioPlayer2{
+
+    width: 100%;
+    height: 100px;
+    margin:5px;
+
+    position: relative;
+
+    background-image: url("../img/audio_image2.jpeg");
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-style:solid;
+    border-width:3px;
+
+
+}
+
+.audioPlayer2 audio{ 
+   position:absolute;
+   bottom:0;
+   left: -5%;
+   width:80%;
+}
+
+
+.audioPlayer3{
+
+  width: 100%;
+  height: 100px;
+  margin:5px;
+
+  position: relative;
+
+  background-image: url("../img/audio_image3.jpeg");
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 200px;
+
+  border-style:solid;
+  border-width:3px;
+
+
 }
 
-.audio_samples_show2 {
-  background-image: url('../images/audio_image2.jpeg');
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.audioPlayer3 audio{ 
+ position:absolute;
+ bottom:0;
+ left: -5%;
+ width:80%;
 }
 
-.audio_samples_row {
-  justify-content: space-around;
-}
+/* *********************************************************** */
 
-/* ****************************************************************** 
+
+
+
+
+
