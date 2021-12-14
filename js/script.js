@@ -195,6 +195,11 @@ $(function () {
       weekendQuantity
     )
   }
+  //TICKET PAGE ENDS//
+
+
+
+  //ARTIST PAGE- LIGHTBOX ENDS//
 
   const lightbox = document.createElement('div')
   lightbox.id = 'lightbox'
@@ -217,6 +222,11 @@ $(function () {
     if (e.target !== e.currentTarget) return
     lightbox.classList.remove('active')
   })
+
+  //ARTIST PAGE- LIGHTBOX ENDS//
+
+
+
 
   //PAYMENT PAGE STARTS//
   $('#cc-number').on('input', function (e) {
@@ -292,3 +302,5 @@ function isValidName(value) {
   let regex = new RegExp('[a-zA-Z]{3,}')
   return regex.test(value)
 }
+
+//PAYMENT PAGE ENDS//

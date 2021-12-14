@@ -38,31 +38,26 @@ p {
   box-shadow: none;
 }
 
-/* Agegate page
- */
-.logo-round {
-  width: 150px;
+.yellow-btn {
+  width: 250px;
+  background-color: var(--yellow);
+  border: black solid 3px;
+  color: var(--dark-grey);
+  font-family: 'bebas neue' !important;
+  font-size: 23px;
+  letter-spacing: 0.1rem;
+  border-radius: 0;
 }
-.door-top {
-  width: 400px;
-  height: 400px;
-  margin: auto;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  background: var(--dark-grey);
-}
-
-.background-dark {
-  width: 100%;
-  height: 100px;
-  background: var(--dark-grey);
+.yellow-btn:hover {
+  background-color: var(--dark-grey) !important;
+  border: black solid 3px;
+  color: var(--yellow);
 }
 
 /* Header start */
 nav {
   background-color: var(--dark-grey);
   max-height: 70px !important;
-  font-family: mountain-date;
   text-transform: uppercase;
   z-index: 999;
 }
@@ -165,7 +160,7 @@ main {
   background-repeat: no-repeat;
   background: linear-gradient(
     180deg,
-    rgba(46, 89, 76, 0.3) 19%,
+    rgba(46, 89, 76, 0) 19%,
     rgba(29, 51, 44, 1) 100%
   );
 }
@@ -240,21 +235,6 @@ TICKETS PAGE STARTS
   background-color: var(--yellow);
 }
 
-.btn-tickets {
-  width: 250px;
-  background-color: var(--yellow);
-  border: black solid 3px;
-  color: var(--dark-grey);
-  font-family: 'bebas neue' !important;
-  font-size: 23px;
-  letter-spacing: 0.1rem;
-}
-.btn-tickets:hover {
-  background-color: var(--dark-grey);
-  border: black solid 3px;
-  color: var(--yellow);
-}
-
 .text-description p {
   font-size: 20px;
   line-height: 1.5;
@@ -284,8 +264,9 @@ TICKETS PAGE STARTS
 /* PAYMENT PAGE STARTS */
 
 .wrapper {
-  padding: 2rem !important;
-  width: auto;
+  margin: auto;
+  padding: 50px;
+  overflow: hidden;
 }
 .card-header {
   font-size: 22px !important;
@@ -294,14 +275,14 @@ TICKETS PAGE STARTS
 }
 
 .payment-container {
+  margin: auto;
   font-family: 'bebas neue';
   background-color: var(--beige);
   border-radius: 0;
   text-align: left;
   font-size: 18px;
   letter-spacing: 0.01rem;
-  padding: 10px;
-  margin: 10px 40px;
+  padding: 20px;
 }
 
 .card-body input {
@@ -312,67 +293,18 @@ TICKETS PAGE STARTS
   box-shadow: 0.5px 0px 0px 0px #fff !important;
   border-color: var(--yellow);
 }
-.payment-btn {
-  text-align: center;
-  width: 250px;
-  border-radius: 0;
-  color: var(--dark-grey);
-  background-color: var(--yellow);
-  border: black solid 3px;
-  font-size: 24px !important;
-  letter-spacing: 0.1rem;
-}
-
-.btn-align {
-  text-align: center;
-}
-.payment-btn:hover {
-  background-color: var(--dark-grey);
-  color: var(--yellow);
-  border: black solid 3px;
-}
 
 .row-pay {
   border: black solid 3px;
 }
 /* CONFIRMATION PAGE STARTS */
 
-.confirmation-wrapper {
-  width: 480px;
-  overflow: hidden;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 40px;
-  margin-top: 20px;
-}
-
-.confirmation-container {
-  background-color: var(--beige);
-  border: black solid 3px;
-  width: 100%;
-  float: left;
-  margin-top: 20px;
-  border-radius: 0px;
-  box-sizing: border-box;
-  padding: 80px 30px 25px 30px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.icon__success {
-  position: absolute;
-  top: -40px;
-  left: 145px;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background-color: white;
-  border: 3px solid white;
+.card-header{
+text-align: center;
 }
 
 .icon__success i {
-  color: var(--green);
+  color: rgb(49, 192, 109);
   line-height: 67px;
   font-size: 84px;
 }
@@ -381,7 +313,7 @@ TICKETS PAGE STARTS
   color: var(--dark-grey);
   font-size: 28px;
   font-weight: 500;
-  margin-top: 5px;
+  margin-top: 50px;
 }
 
 .card__submsg {
@@ -390,30 +322,11 @@ TICKETS PAGE STARTS
   font-weight: 400;
   margin-top: 0px;
 }
-
-.card-body {
-  background-color: white;
-  border-radius: 0px;
-  width: 100%;
-  margin-top: 20px;
-  float: left;
-  box-sizing: border-box;
-  padding: 30px;
+.payment-container{
+text-align: center;
 }
-
-.ticket-icon {
-  font-size: 59px;
-  color: black;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.customer-info {
-  display: inline-block;
-}
-
 .name-customer {
-  color: var(--dark-grey);
+  color: var(--yellow);
   text-align: center;
   margin-bottom: 5px;
   font-weight: 600;
@@ -452,21 +365,20 @@ TICKETS PAGE STARTS
 
 .card-payment {
   background-color: rgb(245, 245, 245);
-  border-radius: 0px !important;
-  width: 100%;
-  height: 100px;
+  width: fit-content;
+  margin: auto;
+  padding: 20px 30px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 13px;
+  border-radius: 0;
 }
 
 .card-payment i {
   font-size: 30px;
   display: inline-block;
   margin-right: 40px;
-  margin-top: -25px;
 }
 
 .card-details {
@@ -486,20 +398,6 @@ TICKETS PAGE STARTS
   margin-top: 0px;
 }
 
-.back-home-btn {
-  width: 250px;
-  background-color: var(--yellow);
-  border: black solid 3px;
-  color: var(--dark-grey);
-  font-family: 'bebas neue' !important;
-  font-size: 23px;
-  letter-spacing: 0.1rem;
-}
-.back-home-btn:hover {
-  background-color: var(--dark-grey);
-  border: black solid 3px;
-  color: var(--yellow);
-}
 
 /*
 ABOUT PAGE STARTS
