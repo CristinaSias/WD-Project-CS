@@ -307,7 +307,7 @@ ABOUT PAGE STARTS
   text-align: center;
   box-sizing: border-box;
   height: auto;
-  background-image: url(../img/carousel-1-01.jpg);
+  background-image: url(../img/carousel-1-01.jpeg);
   background-size: 100%;
   background-size: cover;
 }
@@ -478,6 +478,7 @@ ABOUT PAGE ENDS
   justify-content: center;
   text-justify: inter-word;
 }
+
 .icon-profile:hover {
   color: var(--beige);
 }
@@ -631,6 +632,7 @@ MUSICIAN PAGE ENDS
 .picture_slider_column {
   float: left;
   width: auto;
+  text-align: center;
 }
 
 /*colume container */
@@ -638,9 +640,14 @@ MUSICIAN PAGE ENDS
 .picture_slider_cc {
   position: relative;
   flex-direction: row;
-  display: flexbox;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: center;
+}
+
+.picture_slider_cc img:hover{
+  opacity: 50%;
 }
 
 /* The Modal (background) */
