@@ -5,6 +5,7 @@
   --red: #d64f49;
   --dark-green: #1d332c;
   --yellow: #d2a24c;
+  --green: rgba(46, 89, 76);
 }
 body {
   background-repeat: no-repeat;
@@ -84,7 +85,7 @@ nav {
 }
 
 .btn-ticket {
-  background-color: var(--red) !important;
+  background-color: var(--yellow) !important;
 }
 
 .btn-main:hover,
@@ -371,7 +372,7 @@ TICKETS PAGE STARTS
 }
 
 .icon__success i {
-  color: #60c878;
+  color: var(--green);
   line-height: 67px;
   font-size: 84px;
 }
@@ -428,7 +429,7 @@ TICKETS PAGE STARTS
   color: var(--yellow);
   font-size: 24px;
   text-align: center;
-  letter-spacing: 0;
+  letter-spacing: 0.01rem;
   margin-top: 0px;
 }
 
