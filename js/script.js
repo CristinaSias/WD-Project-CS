@@ -1,18 +1,3 @@
-/* HOMEPAGE STARTS */
-
-
-/* carousel */
-
-$(function(){
-          // carousel demo
-   !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-
-
 //TICKETS PAGE STARTS//
 $(function () {
   //  Sartuday
@@ -216,7 +201,7 @@ $(function () {
 
   //ARTIST PAGE- LIGHTBOX ENDS//
 
-/*   const lightbox = document.createElement('div')
+  const lightbox = document.createElement('div')
   lightbox.id = 'lightbox'
   document.body.appendChild(lightbox)
 
@@ -236,7 +221,7 @@ $(function () {
   lightbox.addEventListener('click', (e) => {
     if (e.target !== e.currentTarget) return
     lightbox.classList.remove('active')
-  }) */
+  })
 
   //ARTIST PAGE- LIGHTBOX ENDS//
 
