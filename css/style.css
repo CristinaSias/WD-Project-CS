@@ -142,18 +142,27 @@ main {
 }
 .mountain-date {
   font-family: 'bebas neue';
-  font-size: 2vw;
+  font-size: 38px;
   color: var(--beige);
+  text-shadow: 1px 2px 2px var(--dark-grey) !important;
 }
 
 .lineup {
   font-family: plaster;
   color: var(--beige);
   font-size: 3vw;
+  text-shadow: 2px 2px 2px var(--dark-grey);
+}
+.lineup-p h3 {
+  font-family: 'bebas neue' !important;
+  font-size: 34px;
+  text-shadow: 1px 2px 2px var(--dark-grey);
+  letter-spacing: .2rem;
 }
 .lineup-p p {
   font-family: 'bebas neue' !important;
   font-size: 24px;
+  text-shadow: 1px 2px 2px var(--dark-grey);
 }
 #bottom-hero {
   height: 80vh;
@@ -299,8 +308,8 @@ TICKETS PAGE STARTS
 }
 /* CONFIRMATION PAGE STARTS */
 
-.card-header{
-text-align: center;
+.card-header {
+  text-align: center;
 }
 
 .icon__success i {
@@ -322,11 +331,11 @@ text-align: center;
   font-weight: 400;
   margin-top: 0px;
 }
-.payment-container{
-text-align: center;
+.payment-container {
+  text-align: center;
 }
 .name-customer {
-  color: var(--yellow);
+  color: var(--dark-green);
   text-align: center;
   margin-bottom: 5px;
   font-weight: 600;
@@ -339,7 +348,7 @@ text-align: center;
 }
 
 .confirmation-email {
-  color: var(--yellow);
+  color: var(--dark-green);
   font-size: 24px;
   text-align: center;
   letter-spacing: 0.01rem;
@@ -399,7 +408,6 @@ text-align: center;
   margin-top: 0px;
 }
 
-
 /*
 ABOUT PAGE STARTS
  */
@@ -424,7 +432,7 @@ ABOUT PAGE STARTS
 .timeline-header-title {
   color: white;
   font-size: 40px;
-  text-shadow: #222529;
+  text-shadow: 2px 2px black;
   font-family: 'bebas neue';
   font-weight: bold;
   letter-spacing: 0.2em;
@@ -438,7 +446,7 @@ ABOUT PAGE STARTS
   letter-spacing: 3px;
   margin: 10px auto;
   font-weight: normal;
-  text-shadow: #222529;
+  text-shadow: 2px 2px black;
 }
 .timeline-header p {
   letter-spacing: 0.05em;
