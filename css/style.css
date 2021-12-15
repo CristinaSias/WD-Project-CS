@@ -213,7 +213,6 @@ TICKETS PAGE STARTS
   min-height: 60vh;
   padding-top: 20px;
   padding-bottom: 30px;
-  background-image: url(../img/WDCSS-Backgrond2-a-01.png);
   background-position: center center;
   background-size: cover;
 }
@@ -338,6 +337,7 @@ TICKETS PAGE STARTS
 .name-customer {
   color: var(--dark-green);
   text-align: center;
+  font-size: 24px;
   margin-bottom: 5px;
   font-weight: 600;
 }
