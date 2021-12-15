@@ -112,6 +112,10 @@ margin-left:140px;
   text-align: center;
   font-family: plaster;
 }
+.cover_page_link:hover {
+  color: #d2a24c;
+}
+
 
 /* ******************************************************* */
 
