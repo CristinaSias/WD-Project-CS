@@ -1181,7 +1181,7 @@ left:12%;
 
    position: relative;
 
-   background-image: url("../images/audio_image1.jpg");
+   background-image: url("../img/audio_image1.jpg");
 
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -1225,7 +1225,7 @@ font-size: x-large;
 
   position: relative;
 
-  background-image: url("../images/audio_image2.jpeg");
+  background-image: url("../img/audio_image2.jpeg");
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1253,7 +1253,7 @@ margin:5px;
 
 position: relative;
 
-background-image: url("../images/audio_image3.jpeg");
+background-image: url("../img/audio_image3.jpeg");
 
 -webkit-background-size: cover;
 -moz-background-size: cover;
