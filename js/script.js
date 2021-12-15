@@ -1,3 +1,18 @@
+/* HOMEPAGE STARTS */
+
+
+/* carousel */
+
+$(function(){
+          // carousel demo
+   !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+
+
 //TICKETS PAGE STARTS//
 $(function () {
   //  Sartuday
