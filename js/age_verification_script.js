@@ -47,22 +47,43 @@ function ageCheck() {
         futureYearAttend +
         '.'
       $('.age_verification_alertContainer').removeClass('age_verification_hide')
-      document.getElementById('birthDate').reset()
+      
+      document.getElementById('birthDate').reset();
+      document.getElementById('day').setAttribute('disabled', 'disabled');
+      document.getElementById('month').setAttribute('disabled', 'disabled');
+      document.getElementById('year').setAttribute('disabled', 'disabled');
     }
+
   } else {
     document.getElementById('dateErrorMsg').innerHTML =
       'The date you entered was not valid. Please try again.'
     $('.age_verification_invalidDateContainer').removeClass(
-      'age_verification_hide',
+      'age_verification_hide'
     )
+   
+
     document.getElementById('birthDate').reset()
+    document.getElementById('day').setAttribute('disabled', 'disabled');
+    document.getElementById('month').setAttribute('disabled', 'disabled');
+    document.getElementById('year').setAttribute('disabled', 'disabled');
   }
 }
 
 $('.age_verification_close').click(function () {
-  $('.age_verification_alertContainer').addClass('age_verification_hide')
+  $('.age_verification_alertContainer').addClass('age_verification_hide');
+
+  document.getElementById('day').removeAttribute('disabled', 'disabled');
+  document.getElementById('month').removeAttribute('disabled', 'disabled');
+  document.getElementById('year').removeAttribute('disabled', 'disabled');
+
 })
 
+
 $('.age_verification_close').click(function () {
-  $('.age_verification_invalidDateContainer').addClass('age_verification_hide')
+  $('.age_verification_invalidDateContainer').addClass('age_verification_hide');
+
+  document.getElementById('day').removeAttribute('disabled', 'disabled');
+  document.getElementById('month').removeAttribute('disabled', 'disabled');
+  document.getElementById('year').removeAttribute('disabled', 'disabled');
+
 })
