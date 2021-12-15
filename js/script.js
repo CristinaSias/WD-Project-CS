@@ -201,7 +201,7 @@ $(function () {
 
   //ARTIST PAGE- LIGHTBOX ENDS//
 
-  const lightbox = document.createElement('div')
+/*   const lightbox = document.createElement('div')
   lightbox.id = 'lightbox'
   document.body.appendChild(lightbox)
 
@@ -221,7 +221,7 @@ $(function () {
   lightbox.addEventListener('click', (e) => {
     if (e.target !== e.currentTarget) return
     lightbox.classList.remove('active')
-  })
+  }) */
 
   //ARTIST PAGE- LIGHTBOX ENDS//
 
