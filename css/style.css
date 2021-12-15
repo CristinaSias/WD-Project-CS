@@ -157,7 +157,7 @@ main {
   font-family: 'bebas neue' !important;
   font-size: 34px;
   text-shadow: 1px 2px 2px var(--dark-grey);
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 .lineup-p p {
   font-family: 'bebas neue' !important;
@@ -193,6 +193,7 @@ main {
 .courousel-header {
   background-color: var(--beige);
   border: 3px solid black !important;
+  padding: 10px 30px 30px 30px;
 }
 
 .courousel-header h1 {
