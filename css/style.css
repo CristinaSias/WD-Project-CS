@@ -361,7 +361,7 @@ TICKETS PAGE STARTS
   font-size: 50px;
 }
 
-#euro {
+.euro {
   font-size: 60%;
 }
 
@@ -412,7 +412,7 @@ TICKETS PAGE STARTS
 /*
 ABOUT PAGE STARTS
  */
-#about-page {
+.about-page {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -559,7 +559,7 @@ ABOUT PAGE ENDS
 
 /* ARTIST PAGE STARTS */
 
-#artist-section {
+.artist-section {
   padding-top: 50px;
   padding-bottom: 50px;
   background-position: center center;
@@ -654,7 +654,7 @@ ABOUT PAGE ENDS
 
 /* MUSICIAN PAGE STARTS */
 
-#artist-section {
+.artist-section {
   min-height: 60vh;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -713,22 +713,22 @@ MUSICIAN PAGE ENDS
  */
 
 /* footer */
-#footer {
+.footer {
   margin: 0 auto;
   text-align: center;
   background-color: var(--dark-green);
 }
-#footer a {
+.footer a {
   color: var(--beige);
   font-size: 30px;
   padding: 20px;
 }
-#footer a:hover {
+.footer a:hover {
   color: var(--yellow);
   font-size: 30px;
   padding: 20px;
 }
-#footnote {
+.footnote {
   padding-top: 20px;
   font-family: 'Courier New', Courier, monospace;
 }

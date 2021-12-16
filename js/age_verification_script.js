@@ -34,7 +34,7 @@ function ageCheck() {
     var days = dateDifferenceMilli / (1000 * 3600 * 24)
 
     if (Math.abs(days >= 6574.5)) {
-      window.location.replace('./home.html')
+      window.location.replace('../homepage/index.html')
       document.getElementById('birthDate').reset()
     } else {
       var timeLeftYears = (6574.5 - days) / 365
