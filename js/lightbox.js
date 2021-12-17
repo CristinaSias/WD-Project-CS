@@ -1,6 +1,6 @@
 
 
-  //ARTIST PAGE- LIGHTBOX ENDS//
+  //ARTIST PAGE- PHOTO LIGHTBOX ENDS//
 $(function () {
   const lightbox = document.createElement('div')
   lightbox.id = 'lightbox'
@@ -24,5 +24,5 @@ $(function () {
     lightbox.classList.remove('active')
   })
 })
-  //ARTIST PAGE- LIGHTBOX ENDS//
+  //ARTIST PAGE- PHOTO LIGHTBOX ENDS//
 
