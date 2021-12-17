@@ -289,7 +289,6 @@ TICKETS PAGE STARTS
   background-color: var(--beige);
   border-radius: 0;
   text-align: left;
-  font-size: 18px;
   letter-spacing: 0.01rem;
   padding: 20px;
 }
@@ -305,6 +304,11 @@ TICKETS PAGE STARTS
 
 .row-pay {
   border: black solid 3px;
+}
+.message-email{
+font-size: 16px !important;
+background-color: #d2a24c;
+margin: 20px 0;
 }
 /* CONFIRMATION PAGE STARTS */
 
