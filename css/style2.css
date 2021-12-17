@@ -1161,7 +1161,7 @@ audio::-webkit-media-controls-mute-button {
 
   position: relative;
 
-  background-image: url('../img/audio_image1.jpg');
+  background-image: url('../img/audio_image1.jpeg');
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
