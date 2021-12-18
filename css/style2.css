@@ -48,8 +48,8 @@
 @keyframes glowing {
   from {
     box-shadow: 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red,
-      0 0 80px red, 0 100 px red, 0 0 120px red, 0 0 140px red, 0 0 160px,
-      red 0 0 180px rgb(231, 231, 225);
+      0 0 80px red, 0 0 100px red, 0 0 120px red, 0 0 140px red, 0 0 160px
+      red, 0 0 180px rgb(231, 231, 225);
   }
 
   to {
@@ -60,44 +60,7 @@
   }
 }
 
-/* #Remnants of older fade in animation#
 
-@keyframes fadeIn {
-from{opacity: 0;}
- to{opacity: 0.2;} 
-}
-
-@keyframes fadeOut {
-from{opacity: 0.2;}
- to{opacity: 0;} 
-}
-
-.fadeInAnimation{
-
-animation-name: fadeIn ;
-animation-duration: 2s;  
-animation-iteration-count: 2; 
-animation-direction: alternate;
-opacity: 0;
-
-}
-
-#fade-in1{
-
-margin-left:220px;
-}
-
-#fade-in2{
-animation-delay: 5s;
-margin-left:280px;
-}
-
-#fade-in3{
-animation-delay: 10s;
-margin-left:140px;
-}
-
-*/
 
 /* Parameters for "enter link". Position in relation to central reference point */
 
@@ -146,7 +109,8 @@ margin-left:140px;
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translateX(-50%, -50%);
+  transform: translateX(-50%);
+  transform: translateY(-50%);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -185,6 +149,10 @@ margin-left:140px;
   background: black;
   opacity: 0.25;
 }
+
+
+
+/* Logo and Text Positioning for age verification page */
 
 .age_verification_logo {
   position: absolute;
@@ -242,6 +210,7 @@ margin-left:140px;
   z-index: 2;
 }
 
+
 /* Removing increase/decrease bars from input boxes */
 
 input::-webkit-outer-spin-button,
@@ -298,12 +267,14 @@ input::-webkit-inner-spin-button {
 }
 
 /* Background lettering for input boxes */
+
 ::placeholder {
   font-size: x-large;
   text-align: center;
 }
 
 /*Button parameters*/
+
 .age_verification_button-style {
   font-family: bebas neue;
   font-weight: bold;
@@ -372,13 +343,12 @@ input::-webkit-inner-spin-button {
   color: #ece6c2;
 }
 
-/* ************************************************* */
+
 
 /* *************************** PICTURE SLIDER ******************* */
 
 .picture_slider_row > .picture_slider_column {
-  padding: 0 1px;
-  /* Controling the padding between images in non-main view mode*/
+  padding: 0 1px;   /* Controling the padding between images in non-main view mode*/
 }
 
 .picture_slider_row:after {
@@ -428,9 +398,8 @@ input::-webkit-inner-spin-button {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 50%;
-  /*Width of the every picture when a main view has been picked */
-  max-width: 1200 px;
+  width: 50%; /*Width of the every picture when a main view has been picked */
+  max-width: 1200px;
 }
 
 .picture_slider_mySlides {
@@ -453,7 +422,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   top: 10px;
   right: 25px;
-  font-size: 35 px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -464,7 +433,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-/* Hide the slides by default */
+/* Next and previous pointers */
 
 .picture_slider_prev,
 .picture_slider_next {
@@ -473,7 +442,7 @@ input::-webkit-inner-spin-button {
   top: 50%;
 
   width: auto;
-  padding: 16 px;
+  padding: 16px;
   margin-top: -50px;
   color: black;
   font-weight: bold;
@@ -509,10 +478,7 @@ input::-webkit-inner-spin-button {
 }
 
 .picture_slider_dot1 {
-  /*position:absolute;
-    top:30%;
-    left: 900%;*/
-
+ 
   z-index: 1;
   width: 20px;
   height: 20px;
@@ -523,11 +489,7 @@ input::-webkit-inner-spin-button {
 }
 
 .picture_slider_dot2 {
-  /*
-    position:absolute;
-    
-    top:30%;
-    left:850%; */
+ 
 
   z-index: 1;
   width: 20px;
@@ -539,10 +501,7 @@ input::-webkit-inner-spin-button {
 }
 
 .picture_slider_dot3 {
-  /*
-    position:absolute;
-    top: 30%;
-    left:800%;*/
+ 
 
   z-index: 1;
   width: 20px;
@@ -554,10 +513,7 @@ input::-webkit-inner-spin-button {
 }
 
 .picture_slider_dot4 {
-  /*
-    position:absolute;
-    top: 30%;
-    */
+  
   z-index: 1;
   width: 20px;
   height: 20px;
@@ -590,7 +546,7 @@ input::-webkit-inner-spin-button {
 .picture_slider_caption-container {
   text-align: center;
   background-color: black;
-  padding: 2px 16 px;
+  padding: 2px 16px;
   color: white;
 }
 
@@ -814,9 +770,9 @@ r {
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
 }
-/*#region MODULES */
-/*#endregion */
-/*___________________________________ LAYOUT ___________________________________ */
+/*region MODULES */
+
+/* ******************************* LAYOUT ___________________________________ */
 
 .video_slider_ul {
   padding-left: 40px;
@@ -1177,7 +1133,7 @@ audio::-webkit-media-controls-mute-button {
 .audioPlayer audio {
   position: absolute;
   bottom: 0;
-  left: -5%;
+  left: 0%;
   width: 80%;
 }
 
@@ -1213,7 +1169,7 @@ audio::-webkit-media-controls-mute-button {
 .audioPlayer2 audio {
   position: absolute;
   bottom: 0;
-  left: -5%;
+  left: 0%;
   width: 80%;
 }
 
@@ -1238,6 +1194,6 @@ audio::-webkit-media-controls-mute-button {
 .audioPlayer3 audio {
   position: absolute;
   bottom: 0;
-  left: -5%;
+  left: 0%;
   width: 80%;
 }
