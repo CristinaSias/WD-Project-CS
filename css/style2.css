@@ -293,12 +293,6 @@ input::-webkit-inner-spin-button {
 
 /* Alert (not old enough/invalid date) parameters */
 
-.age_verification_alertContainer {
-}
-
-.age_verification_invalidDateContainer {
-}
-
 .age_verification_alertContainer.age_verification_hide {
   display: none;
 }

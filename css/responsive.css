@@ -100,79 +100,7 @@
 
   /* ABOUT PAGE */
 
-  .timeline ul li img {
-    cursor: pointer;
-  }
-  .timeline::before {
-    position: absolute;
-    left: 52%;
-    width: 3px;
-    height: 100%;
-    transform: translateX(-40%);
-    content: '';
-    background: black;
-  }
-  .timeline-header-title {
-    font-size: 66px;
-  }
-  .timeline-header-subtitle {
-    font-size: 40px;
-  }
-  .timeline ul li {
-    width: 50%;
-    position: relative;
-  }
-  .timeline ul li:nth-child(odd) {
-    float: left;
-    clear: right;
-    transform: translate(-20px);
-    border-radius: 100px 0px 20px 20px;
-    text-align: end;
-  }
-
-  .timeline ul li:nth-child(even) {
-    float: right;
-    clear: left;
-    transform: translate(20px);
-    border-radius: 0px 100px 20px 20px;
-  }
-  .timeline ul li::after {
-    content: '';
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: black;
-    top: 0;
-  }
-  .timeline ul li:nth-child(odd)::after {
-    right: -23px;
-    transform: translate(50%, -50%);
-  }
-  .timeline ul li:nth-child(even)::after {
-    left: -23px;
-    transform: translate(-50%, -50%);
-  }
-
-  .timeline ul li:hover:after {
-    background-color: var(--yellow);
-    transition: 0.2s;
-  }
-  .timeline ul li:hover {
-    opacity: 100%;
-    filter: blur(0px);
-  }
-  .timeline ul li:last-child {
-    margin-bottom: 0;
-  }
-  /* ARTISTS PAGE */
-  .left-column-wrapper-yellow,
-  .left-column {
-    display: none !important;
-  }
-
 }
-
 /* Small Devices */
 
 @media only screen and (max-width: 576px) {

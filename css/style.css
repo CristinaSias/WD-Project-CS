@@ -1,3 +1,6 @@
+/* general style */
+
+/* variables to create the color palette */
 :root {
   --white: #ffffff;
   --dark-grey: #222529;
@@ -6,16 +9,17 @@
   --dark-green: #1d332c;
   --yellow: #d2a24c;
   --green: rgba(46, 89, 76);
+  --green-gradient: linear-gradient(
+    180deg,
+    rgba(46, 89, 76, 1) 19%,
+    rgba(188, 193, 122, 1) 100%
+  );
 }
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background: var(--dark-grey);
-  background: linear-gradient(
-    180deg,
-    rgba(46, 89, 76, 1) 19%,
-    rgba(188, 193, 122, 1) 100%
-  );
+  background: var(--green-gradient);
 }
 * {
   margin: 0;
@@ -98,16 +102,11 @@ nav {
 }
 /* Header end */
 
-main {
-  max-width: 100%;
-  min-height: 83vh;
-}
-
 /* 
   HOME PAGE START
 */
 
-/* Home page hero start */
+/* Homepage top section start */
 #home-page-hero {
   background-image: url('../img/mountain-01.png');
   background-repeat: no-repeat;
@@ -181,9 +180,9 @@ main {
   font-size: 18px;
 }
 
-/* Hero end */
+/* Homepage top section end */
 
-/* gallery section starts*/
+/* Homepage gallery section starts*/
 
 #carousel-section-wrapper {
   background-color: var(--dark-green);
@@ -200,7 +199,7 @@ main {
   font-size: 2.5em;
 }
 
-/* gallery ends */
+/*Homepage gallery section */
 
 /*
   HOME PAGE END
@@ -305,12 +304,14 @@ TICKETS PAGE STARTS
 .row-pay {
   border: black solid 3px;
 }
-.message-email{
-font-size: 16px !important;
-background-color: #d2a24c;
-margin: 20px 0;
+.message-email {
+  font-size: 16px !important;
+  background-color: #d2a24c;
+  margin: 20px 0;
 }
-/* CONFIRMATION PAGE STARTS */
+/* PAYMENT PAGE ENDS */
+
+/********************************** CONFIRMATION PAGE STARTS *************************************/
 
 .card-header {
   text-align: center;
@@ -412,10 +413,10 @@ margin: 20px 0;
   font-size: 12px;
   margin-top: 0px;
 }
+/* CONFIRMATION PAGE ENDS */
 
-/*
-ABOUT PAGE STARTS
- */
+/********************************** ABOUT PAGE STARTS *************************************/
+
 .about-page {
   margin: 0;
   padding: 0;
@@ -490,8 +491,10 @@ ABOUT PAGE STARTS
   margin-bottom: 20px;
 }
 
-/* responsive about page */
+/* large devices only about page */
 @media only screen and (min-width: 768px) {
+
+  
   .timeline::before {
     position: absolute;
     left: 52%;
@@ -556,12 +559,9 @@ ABOUT PAGE STARTS
   }
 }
 
-/* 
-/* 
-ABOUT PAGE ENDS
- */
+/*  ABOUT PAGE ENDS */
 
-/* ARTIST PAGE STARTS */
+/************************ ARTIST PAGE STARTS **********************************/
 
 .artist-section {
   padding-top: 50px;
@@ -611,7 +611,7 @@ ABOUT PAGE ENDS
   border: black 3px solid;
 }
 
-/* artist-lightbox */
+/* Artist-lightbox section */
 
 .gallery-wrapper {
   display: grid;
@@ -656,7 +656,7 @@ ABOUT PAGE ENDS
 
 /* ARTIST PAGE ENDS */
 
-/* MUSICIAN PAGE STARTS */
+/************************ MUSICIAN PAGE STARTS **********************************/
 
 .artist-section {
   min-height: 60vh;
@@ -712,11 +712,10 @@ ABOUT PAGE ENDS
   background-color: black;
 }
 
-/*  
-MUSICIAN PAGE ENDS
- */
+/* MUSICIAN PAGE ENDS */
 
-/* footer */
+/************************ FOOTER STARTS **********************************/
+
 .footer {
   margin: 0 auto;
   text-align: center;
@@ -736,8 +735,9 @@ MUSICIAN PAGE ENDS
   padding-top: 20px;
   font-family: 'Courier New', Courier, monospace;
 }
+/* FOOTER ENDS */
 
-/* *************************** PICTURE SLIDER ******************* */
+/**************************** PICTURE SLIDER *********************/
 
 .picture_slider_row > .picture_slider_column {
   padding: 0 1px;
@@ -977,3 +977,4 @@ img.picture_slider_hover-shadow {
 .picture_slider_hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/* PICTURE SLIDER ENDS */
